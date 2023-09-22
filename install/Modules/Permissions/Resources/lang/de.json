@@ -1,0 +1,16 @@
+{
+    "Permissions": "Berechtigungen",
+    "Create new permission": "Neue Berechtigung erstellen",
+    "test": "pr\u00fcfung",
+    "Permission created successfully.": "Berechtigung erfolgreich erstellt.",
+    "Edit permission": "Berechtigung bearbeiten",
+    "Permission updated successfully.": "Berechtigung erfolgreich aktualisiert.",
+    "Selected permission(s) deleted successfully.": "Ausgew\u00e4hlte Berechtigung(en) erfolgreich gel\u00f6scht.",
+    "Your about to delete user permission(s)!": "Sie sind dabei, die Benutzerberechtigung(en) zu l\u00f6schen!",
+    "Name": "Name",
+    "Display Name": "Anzeigename",
+    "Guard Name": "Guard-Name",
+    "Actions": "Aktionen",
+    "Delete selected permissions": "Ausgew\u00e4hlte Berechtigungen l\u00f6schen",
+    "No permissions were found!": "Es wurden keine Berechtigungen gefunden!"
+}

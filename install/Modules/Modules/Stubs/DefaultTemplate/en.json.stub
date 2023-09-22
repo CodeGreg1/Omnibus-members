@@ -1,0 +1,20 @@
+{
+    "All $LOWER_NAME_SPACED$ records.": "All $LOWER_NAME_SPACED$ records.",
+    "You're about to delete this $SINGULAR_LOWER_NAME_SPACED$!": "You're about to delete this $SINGULAR_LOWER_NAME_SPACED$!",
+    "You're about to restore this $SINGULAR_LOWER_NAME_SPACED$!": "You're about to restore this $SINGULAR_LOWER_NAME_SPACED$!",
+    "You're about to force delete this $SINGULAR_LOWER_NAME_SPACED$!": "You're about to force delete this $SINGULAR_LOWER_NAME_SPACED$!",
+    "$SINGULAR_LOWER_NAME_SPACED$": "$SINGULAR_LOWER_NAME_SPACED$",
+    "$PLURAL_LOWER_NAME_SPACED$": "$PLURAL_LOWER_NAME_SPACED$",
+    "$PLURAL_START_UPPER_NAME_SPACED$": "$PLURAL_START_UPPER_NAME_SPACED$",
+    "Create new $SINGULAR_LOWER_NAME_SPACED$": "Create new $SINGULAR_LOWER_NAME_SPACED$",
+    "Edit $SINGULAR_LOWER_NAME_SPACED$": "Edit $SINGULAR_LOWER_NAME_SPACED$",
+    "Show $SINGULAR_LOWER_NAME_SPACED$": "Show $SINGULAR_LOWER_NAME_SPACED$",
+    "$SINGULAR_START_UPPER_NAME_SPACED$ created successfully.": "$SINGULAR_START_UPPER_NAME_SPACED$ created successfully.",
+    "$SINGULAR_START_UPPER_NAME_SPACED$ updated successfully.": "$SINGULAR_START_UPPER_NAME_SPACED$ updated successfully.",
+    "$SINGULAR_START_UPPER_NAME_SPACED$ deleted successfully.": "$SINGULAR_START_UPPER_NAME_SPACED$ deleted successfully.",    
+    "Selected $SINGULAR_LOWER_NAME_SPACED$(s) deleted successfully.": "Selected $SINGULAR_LOWER_NAME_SPACED$(s) deleted successfully.",
+    "$SINGULAR_START_UPPER_NAME_SPACED$ fetched successfully.": "$SINGULAR_START_UPPER_NAME_SPACED$ fetched successfully.",
+    "Selected $SINGULAR_LOWER_NAME_SPACED$(s) restored successfully.": "Selected $SINGULAR_LOWER_NAME_SPACED$(s) restored successfully.",
+    "Selected $SINGULAR_LOWER_NAME_SPACED$(s) force deleted successfully.": "Selected $SINGULAR_LOWER_NAME_SPACED$(s) force deleted successfully."$LANGUANGE_FORM_FIELDS$,
+    "No $PLURAL_LOWER_NAME_SPACED$ were found!": "No $PLURAL_LOWER_NAME_SPACED$ were found!"
+}

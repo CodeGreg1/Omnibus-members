@@ -1,0 +1,10 @@
+.recent-works-section {
+	.slick-slider {
+		margin-top: 0;
+		
+		.slick-prev, .slick-next {
+			display: none !important;
+		}
+	}
+	
+}

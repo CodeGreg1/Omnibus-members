@@ -1,0 +1,118 @@
+.team-section {
+    padding-bottom: 55px;
+
+    @media (min-width: 992px) {
+        padding-bottom: 95px;
+    }
+
+    .team-member {
+        padding: 25px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        @include bg-white-box-shadow;
+
+        &.media > .pull-left {
+            margin-right: 30px;
+            padding-right: 0;
+        }
+
+        .team-name {
+            @include inline-block;
+            border-radius: 0.25rem;
+            padding: 0 5px;
+            line-height: 1.6;
+            color: #fff;
+            background-color: var(--frontend-primary-color);
+        }
+
+        strong {
+            display: block;
+            font-size: 0.9em;
+        }
+
+        .team-content {
+            margin-top: 1rem;
+        }
+
+        hr {
+            width: 50px;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            margin-left: 0;
+        }
+
+        .social-icon > li {
+            padding-right: 12px;
+
+            > a {
+                color: #989898;
+                font-size: 18px;
+
+                &:hover, &:focus {
+                    color: darken(#989898, 12%);
+                }
+            }
+        }
+
+        @include max-screen($break-xsmall) {
+            text-align: center;
+            
+            &.media > .pull-left {
+                display: inline;
+                float: none !important;
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+
+            hr {
+                margin: 20px auto;
+                float: none !important;
+            }
+        }
+    }
+
+    &.bg-gray {
+        .team-member {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            @include bg-gray-box-shadow;
+        }
+    }
+
+    &.bg-image {
+        &.bg-overlay {
+            .team-member {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 25px;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                box-shadow: none;
+                border-radius: 10px;
+                margin-bottom: 25px;
+
+                .team-content {
+                    color: $gray;
+
+                    p,span,i,strong {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+
+        padding-bottom: 55px;
+
+        @media (min-width: 992px) {
+            padding-bottom: 95px;
+        }
+
+    }
+}
+
+@include max-screen($break-xsmall) {
+    .team {
+        padding-bottom: 0;
+    }
+}
+

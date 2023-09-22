@@ -1,0 +1,69 @@
+#wallets {
+    .summary {
+        li.media {
+            a.media-body {
+                text-decoration: none;
+            }
+            cursor: pointer;
+            &:not(.disabled) .media-right {
+                color: #6c757d;
+            }
+            &:hover :not(.disabled) {
+                .media-title {
+                    color: #6777ef;
+                }
+                .media-right {
+                    color: #6777ef;
+                }
+            }
+            &.active :not(.disabled) {
+                .media-title {
+                    color: #6777ef;
+                }
+                .media-right {
+                    color: #6777ef;
+                }
+            }
+        }
+    }
+}
+.bootbox {
+    .modal-content {
+        .modal-footer {
+            padding-bottom: 25px;
+        }
+    }
+}
+.select2-container--default .select2-results__option[aria-disabled=true] {
+    display: none;
+}
+#admin-manual-gateway-user-data {
+        .row.user-data-row:last-child {
+            .btn.mb-4 {
+                margin-bottom: 0!important;
+            }
+        }
+    }
+@media (min-width: 768px) {
+    #admin-manual-gateway-user-data {
+        .row.user-data-row {
+            .btn.btn-remove-admin-manual-gateway-row {
+                display: inline-block!important;
+                width: auto!important;
+            }
+        }
+        .row.user-data-row:last-child {
+            .form-group {
+                margin-bottom: 0;
+            }
+            .btn.mb-4 {
+                margin-bottom: 0!important;
+            }
+        }
+    }
+}
+.user-overview-cards {
+    .row:last-child {
+        margin-bottom: -12px;
+    }
+}

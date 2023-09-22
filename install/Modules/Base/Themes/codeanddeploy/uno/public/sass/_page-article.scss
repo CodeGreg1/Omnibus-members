@@ -1,0 +1,12 @@
+.page-article {
+	.page-article-inner {
+	    border-radius: 10px;
+	    padding: var(--bs-gutter-x, .75rem);
+	    @include bg-white-box-shadow;
+
+	    .article {
+	    	border: none;
+	    	box-shadow: none;
+	    }
+	}
+}

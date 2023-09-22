@@ -1,0 +1,6 @@
+
+
+    // Restore trashed record
+    app.$CRUD_LOWER$$STUDLY_NAME$Datatable.restore();
+    // Force delete trashed record
+    app.$CRUD_LOWER$$STUDLY_NAME$Datatable.forceDelete();

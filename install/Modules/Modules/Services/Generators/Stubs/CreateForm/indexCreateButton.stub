@@ -1,0 +1,1 @@
+<a href="{{ route('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.create') }}" class="btn btn-primary mt-1">@lang('Create new $SINGULAR_LOWER_NAME_SPACED$')</a>

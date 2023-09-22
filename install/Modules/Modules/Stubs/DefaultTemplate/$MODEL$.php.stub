@@ -1,0 +1,49 @@
+<?php
+
+namespace Modules\$STUDLY_NAME$\Models;
+$UPLOAD_MODEL_USE_MEDIA_CLASS_HAS_MEDIA$
+use Illuminate\Database\Eloquent\Model;$UPLOAD_MODEL_IMPORT_MEDIA_CLASS$$MODEL_SOFT_DELETES_USE$
+use Rennokki\QueryCache\Traits\QueryCacheable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;$UPLOAD_USE_MEDIA_CLASS_MODEL$
+$FOREIGN_MODEL_IMPORT_NAMESPACE$
+class $MODEL$ extends Model$UPLOAD_MODEL_IMPLEMENT_MEDIA$
+{
+    use $MODEL_SOFT_DELETES_IMPORT$HasFactory, QueryCacheable$UPLOAD_MODEL_USE_MEDIA_CLASS$;
+
+    /**
+     * @var string $table
+     */
+    protected $table = '$TABLE_MODEL$';$HIDDEN_COLUMNS$
+
+    /**
+     * @var array $fillable
+     */
+    protected $fillable = [
+        $FILLABLE_COLUMNS$
+    ];$CHOICES_MODEL_CONSTANT_VALUES$$MODEL_APPENDS_COLUMNS$
+
+    /**
+     * @var int $cacheFor
+     */
+    protected $cacheFor = 3600;$UPLOAD_MODEL_WITH_MEDIA_RELATION$
+
+    /**
+     * The "booted" method of the model.
+     *
+     * @return void
+     */
+    protected static function booted()
+    {
+        static::created(function () {
+            static::flushQueryCache();
+        });
+
+        static::updated(function () {
+            static::flushQueryCache();
+        });
+
+        static::deleted(function () {
+            static::flushQueryCache();
+        });
+    }$MODEL_MUTATOR_COLUMNS$$FOREIGN_MODEL_BELONGS_TO$$FOREIGN_MODEL_BELONGS_TO_MANY$$UPLOAD_MODEL_REGISTER_MEDIA_CONVERSIONS$$UPLOAD_MODEL_MEDIA_ATTRIBUTES$
+}

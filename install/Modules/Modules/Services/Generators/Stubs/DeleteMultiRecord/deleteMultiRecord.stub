@@ -1,0 +1,17 @@
+
+
+    /**
+     * Remove the specified resource from storage.
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function multiDestroy(Request $request)
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.multi-delete');
+        
+        $this->$CAMEL_NAME$->multiDelete($request->ids);
+        
+        event(new $STUDLY_NAME$Deleted($this->$CAMEL_NAME$));
+
+        return $this->successResponse(__('Selected $SINGULAR_LOWER_NAME_SPACED$(s) deleted successfully.'));
+    }

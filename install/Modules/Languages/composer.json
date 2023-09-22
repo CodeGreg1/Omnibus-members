@@ -1,0 +1,23 @@
+{
+    "name": "codeanddeploy/languages",
+    "description": "",
+    "authors": [
+        {
+            "name": "Code and Deploy Team",
+            "email": "info@codeanddeploy.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Languages\\": ""
+        }
+    }
+}

@@ -1,0 +1,35 @@
+
+
+    /**
+     * Store new $SINGULAR_LOWER_NAME_SPACED$.
+     * 
+     * @authenticated$API_STORE_COMMENT$
+     * 
+     * @response status=200 scenario="Success" {
+     *      "success": true,
+     *      "message": "$MODEL$ created successfully."
+     * }
+     * @response status=422 scenario="Error Validations" {
+     *       "message": "The $API_FIRST_ERROR_COMMENT$ field is required.",
+     *      "errors": {$API_ERRORS_COMMENT$
+     *      }
+     * }
+     * @response status=401 scenario="Unauthenticated" {
+     *       "message": "Unauthenticated."
+     * }
+     * @response status=403 scenario="Unauthorized" {
+     *       "message": "This action is unauthorized."
+     * }
+     * 
+     * 
+     * @param ApiStore$MODEL$Request $request
+     * @return JsonResource
+     */    
+    public function store(ApiStore$MODEL$Request $request)
+    {
+        $model = $this->$CAMEL_NAME$->create($request->only($API_STORE_COLUMNS$));$FOREIGN_UPDATE_OR_STORE_CONTROLLER_BELONGS_TO_MANY_SYNC$$UPLOAD_CONTROLLER_METHOD_MEDIA$
+
+        event(new $STUDLY_NAME$Created($model));
+
+        return $this->successResponse(__('$SINGULAR_START_UPPER_NAME_SPACED$ created successfully.'));
+    }

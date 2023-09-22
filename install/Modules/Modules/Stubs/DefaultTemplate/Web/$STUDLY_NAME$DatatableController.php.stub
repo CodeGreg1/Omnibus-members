@@ -1,0 +1,54 @@
+<?php
+
+namespace Modules\$STUDLY_NAME$\Http\Controllers\Web$CRUD_STUDLY_START_SLASH$;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+use Yajra\DataTables\Facades\DataTables;
+use Illuminate\Contracts\Support\Renderable;
+use Modules\Base\Http\Controllers\Web\BaseController;
+use Modules\$STUDLY_NAME$\Repositories\$MODEL_PLURAL$Repository;
+
+class $STUDLY_NAME$DatatableController extends BaseController
+{   
+    /**
+     * @var $MODEL_PLURAL$Repository $$CAMEL_NAME$
+     */
+    protected $$CAMEL_NAME$;
+
+    /**
+     * @param $MODEL_PLURAL$Repository $$CAMEL_NAME$
+     * 
+     * @return void
+     */
+    public function __construct($MODEL_PLURAL$Repository $$CAMEL_NAME$) 
+    {
+        $this->$CAMEL_NAME$ = $$CAMEL_NAME$;
+
+        parent::__construct();
+    }
+
+    /**
+     * Handle datatable data
+     * @return JsonResponse
+     */
+    public function index()
+    {   
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.datatable');
+        
+        $query = $this->$CAMEL_NAME$->getModel()->query()$FOREIGN_DATATABLE_WITH_QUERY$;
+
+        if(request()->has('status') && request('status') == 'Trashed') {
+            $query = $query->onlyTrashed();
+        }
+
+        return DataTables::eloquent($query)
+            ->order(function ($query) {
+                if (request()->has('sortValue')) {
+                    $sortValue = explode('__', request('sortValue'));
+                    $query->orderBy($sortValue[0], $sortValue[1]);
+                }
+            })
+            ->toJson();
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "Roles": "Roles",
+    "Create new role": "Create new role",
+    "Role created successfully.": "Role created successfully.",
+    "Edit role": "Edit role",
+    "Role updated successfully.": "Role updated successfully.",
+    "Selected role(s) deleted successfully.": "Selected role(s) deleted successfully.",
+    "Assign Permissions": "Assign Permissions",
+    "Description": "Description",
+    "Display Name": "Display Name",
+    "Name": "Name",
+    "Permission": "Permission",
+    "Update Permissions": "Update Permissions",
+    "Your about to delete user role(s)!": "Your about to delete user role(s)!",
+    "role": "role",
+    "roles": "roles",
+    "No roles were found!": "No roles were found!",
+    "Delete selected roles": "Delete selected roles",
+    "Please select at least 1 permission.": "Please select at least 1 permission.",
+    "Role Type": "Role Type",
+    "Select Type": "Select Type",
+    "Type": "Type"
+}

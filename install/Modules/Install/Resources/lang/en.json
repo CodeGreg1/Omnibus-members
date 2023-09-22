@@ -1,0 +1,21 @@
+{
+    "All install records.": "All install records.",
+    "You're about to delete this install!": "You're about to delete this install!",
+    "You're about to restore this install!": "You're about to restore this install!",
+    "You're about to force delete this install!": "You're about to force delete this install!",
+    "install": "install",
+    "installs": "installs",
+    "Installs": "Installs",
+    "Create new install": "Create new install",
+    "Edit install": "Edit install",
+    "Show install": "Show install",
+    "Install created successfully.": "Install created successfully.",
+    "Install updated successfully.": "Install updated successfully.",
+    "Install deleted successfully.": "Install deleted successfully.",    
+    "Selected install(s) deleted successfully.": "Selected install(s) deleted successfully.",
+    "Install fetched successfully.": "Install fetched successfully.",
+    "Selected install(s) restored successfully.": "Selected install(s) restored successfully.",
+    "Selected install(s) force deleted successfully.": "Selected install(s) force deleted successfully.",
+    "Name": "Name",
+    "No installs found!": "No installs found!"
+}

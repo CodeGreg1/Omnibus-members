@@ -1,0 +1,14 @@
+.page-sidebar {
+    border-radius: 5px !important;
+    @include bg-white-box-shadow-not-important;
+
+    .list-group {
+        .list-group-item {
+            &:hover {
+                strong {
+                    color: var(--frontend-primary-color) !important;
+                }
+            }
+        }
+    }
+}

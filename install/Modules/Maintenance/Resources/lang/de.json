@@ -1,0 +1,12 @@
+{
+    "Maintenance": "Wartung",
+    "Maintenance settings updated successfully.": "Wartungseinstellungen erfolgreich aktualisiert.",
+    "Dashboard": "Armaturenbrett",
+    "Enable maintenance mode": "Wartungsmodus aktivieren",
+    "Accepts only letters, numbers, dash and underscore.": "Akzeptiert nur Buchstaben, Zahlen, Bindestriche und Unterstriche.",
+    "Maintenance Reason": "Wartungsgrund",
+    "Secret code": "Geheim Code",
+    "Required": "Erforderlich",
+    "Save": "Speichern",
+    "Cancel": "Stornieren"
+}

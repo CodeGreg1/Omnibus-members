@@ -1,0 +1,16 @@
+
+
+    /**
+     * Show the specified resource.
+     * @param int $id
+     * @return Renderable
+     */
+    public function show($id)
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.show');
+        
+        return view('$LOWER_NAME$::$CRUD_LOWER_END_DOT$show', [
+            'pageTitle' => __('Show $SINGULAR_LOWER_NAME_SPACED$'),
+            '$LOWER_NAME$' => $this->$CAMEL_NAME$->findOrFail($id)
+        ]);
+    }

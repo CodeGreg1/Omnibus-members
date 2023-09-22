@@ -1,0 +1,51 @@
+.hero-section-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section-buttons a.btn {
+    margin: 6px;
+}
+.recent-works-section .brief-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.team-section .team-member img {
+    width: 64px;
+    height: 64px;
+}
+.hero-section.bg-info:not(.bg-overlay) {
+    background-color: var(--bs-info)!important;
+    background-image: none!important;
+}
+.client-section .client-logo {
+    width: 135px;
+}
+.alert .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: -30px;
+}
+.alert button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+.alert .alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+}
+.alert .alert-body {
+    font-size: 15px;
+}

@@ -1,0 +1,20 @@
+
+                            
+                            <div class="col-12 col-md-12">
+
+                                <div class="form-group">
+                                    <label class="d-block">@lang('$FORM_FIELD_VISUAL$') <span class="text-muted">(@lang('$FORM_VALIDATION_VISUAL$'))</span></label>
+
+                                    @foreach(Modules\$STUDLY_NAME$\Models\$MODEL$::$FORM_FIELD_NAME_UPPER$_$FORM_FIELD_TYPE_UPPER$ as $key => $label)
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" 
+                                                value="{{ $key }}"
+                                                id="$FORM_FIELD_NAME$_radio_{{ $key }}" 
+                                                name="$FORM_FIELD_NAME$" 
+                                                class="custom-control-input">
+                                            <label class="custom-control-label" for="$FORM_FIELD_NAME$_radio_{{ $key }}">{{ $label }}</label>
+                                        </div>
+                                    @endforeach
+                                    $FORM_FIELD_HELP$
+                                </div>
+                            </div>

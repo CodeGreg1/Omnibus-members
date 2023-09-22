@@ -1,0 +1,10 @@
+
+                        if(row.deleted_at !== null) {
+                            if(app.can('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.restore')) {
+                                html += '<a class="dropdown-item btn-$CRUD_LOWER_END_DASH$$LOWER_NAME$-restore" href="javascript:void(0)" data-id="'+row.id+'"><i class="fas fa-trash-restore-alt"></i> ' + app.trans('Restore') + '</a>';
+                            }
+
+                            if(app.can('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.force-delete')) {
+                                html += '<a class="dropdown-item btn-$CRUD_LOWER_END_DASH$$LOWER_NAME$-force-delete" href="javascript:void(0)" data-id="'+row.id+'"><i class="fas fa-trash"></i> ' + app.trans('Force delete') + '</a>';
+                            }
+                        }

@@ -1,0 +1,20 @@
+.section-data-source-wrapper {
+	> .form-group {
+		margin-bottom: 0;
+	}
+}
+
+.frontend-section-data-row {
+	
+	@media screen and (max-width: 767px) {
+		.btn-admin-remove-manual-section-data {
+			width: 100%;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+textarea[name="frontend_custom_css"], 
+textarea[name="frontend_custom_js"] {
+	height: 300px;
+}

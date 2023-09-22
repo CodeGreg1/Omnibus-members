@@ -1,0 +1,12 @@
+.about-page-1 .image-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 35vh;
+}
+
+@media (min-width: 768px) {
+    .about-page-1 .image-header {
+        min-height: 75vh;
+    }
+}

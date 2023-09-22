@@ -1,0 +1,39 @@
+
+
+    /**
+     * Restore the specified resource from storage.
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function restore(Request $request)
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.restore');
+
+        $$CAMEL_NAME$ = $this->$CAMEL_NAME$->withTrashed()->where('id', $request->id);
+
+        $$CAMEL_NAME$->restore();
+        
+        event(new $STUDLY_NAME$Restored($$CAMEL_NAME$->first()));
+
+        return $this->successResponse(__('Selected $SINGULAR_LOWER_NAME_SPACED$(s) restored successfully.'));
+    }
+
+    /**
+     * Force delete the specified resource from storage.
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function forceDelete(Request $request)
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.force-delete');
+
+        $$CAMEL_NAME$ = $this->$CAMEL_NAME$->withTrashed()->where('id', $request->id);
+
+        $first = $$CAMEL_NAME$->first();
+
+        $$CAMEL_NAME$->forceDelete();
+        
+        event(new $STUDLY_NAME$ForceDeleted($first));
+
+        return $this->successResponse(__('Selected $SINGULAR_LOWER_NAME_SPACED$(s) force deleted successfully.'));
+    }

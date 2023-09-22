@@ -1,0 +1,37 @@
+
+
+                            <div class="col-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="$FORM_FIELD_NAME$">@lang('$FORM_FIELD_VISUAL$') <span class="text-muted">(@lang('$FORM_VALIDATION_VISUAL$'))</span></label>
+                                    <div class="dropzone dropzone-multiple" data-toggle="dropzone1" data-dropzone-url="http://" id="$CRUD_LOWER_END_DASH$$KEBAB_NAME$-$FORM_FIELD_NAME$-dropzone" 
+                                    data-field-name="$FORM_FIELD_NAME$"
+                                    data-dropzone-multiple>
+                                        <div class="fallback">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="dropzone-1" name="$FORM_FIELD_NAME$" multiple>
+                                                <label class="custom-file-label" for="customFileUpload">{{__('Choose file')}}</label>
+                                            </div>
+                                        </div>
+                                        <ul class="dz-preview dz-preview-multiple list-group list-group-lg list-group-flush">
+                                            <li class="list-group-item px-0">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="avatar">
+                                                            <img class="rounded" src="{{ url('upload/media/default/dr-default.png') }}" alt="Image placeholder" data-dz-thumbnail>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="text-sm mb-1" data-dz-name>...</h6>
+                                                        <p class="small text-muted mb-0" data-dz-size></p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="#" class="dropdown-item" data-dz-remove>
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>$FORM_FIELD_HELP$
+                                </div>
+                            </div>

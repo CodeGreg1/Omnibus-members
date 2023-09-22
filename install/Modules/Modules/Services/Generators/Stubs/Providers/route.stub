@@ -1,0 +1,5 @@
+
+        Route::middleware('web')
+            ->namespace($this->moduleWebNamespace)
+            ->group(module_path('$STUDLY_NAME$', '/Routes/$CRUD_LOWER$.php'));
+            

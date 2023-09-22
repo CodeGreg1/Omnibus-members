@@ -1,0 +1,13 @@
+{
+    "name": "Sitemap",
+    "alias": "sitemap",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Sitemap\\Providers\\SitemapServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

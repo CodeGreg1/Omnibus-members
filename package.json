@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "scripts": {
+        "dev-all": "concurrently \"npm --section=dashboard run dev\" \"npm --section=site run dev\"  --kill-others-on-fail",
+        "prod-all": "concurrently \"npm --section=dashboard run prod\" \"npm --section=site run prod\"  --kill-others-on-fail",
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^0.25",
+        "jquery": "^3.6.0",
+        "laravel-mix": "^6.0.49",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.37.5",
+        "sass-loader": "^12.1.0"
+    },
+    "dependencies": {
+        "concurrently": "^7.2.1",
+        "laravel-mix-merge-manifest": "^2.0.0"
+    }
+}

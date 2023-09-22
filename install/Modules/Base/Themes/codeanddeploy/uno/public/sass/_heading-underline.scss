@@ -1,0 +1,10 @@
+.heading-underline {
+	&:after {
+	    display: block;
+	    background: var(--frontend-primary-color);
+	    width: 80px;
+	    height: 2px;
+	    margin: auto;
+	    margin-top: 25px;
+	}
+}

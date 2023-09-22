@@ -1,0 +1,15 @@
+
+
+        Schema::create('$BELONGS_TO_MANY_TABLE_NAME$', function (Blueprint $table) {
+            $table->unsignedBigInteger('$BELONGS_TO_MANY_FOREIGN_ID$');
+            $table->foreign('$BELONGS_TO_MANY_FOREIGN_ID$', '$BELONGS_TO_MANY_FOREIGN_FK$')
+                ->references('id')
+                ->on('$BELONGS_TO_MANY_TABLE_MODEL$')
+                ->onDelete('cascade');
+
+            $BELONGS_TO_MANY_RELATED_UNSIGNED$
+            $table->foreign('$BELONGS_TO_MANY_RELATED_ID$', '$BELONGS_TO_MANY_RELATED_FK$')
+                ->references('id')
+                ->on('$BELONGS_TO_MANY_RELATED_TABLE$')
+                ->onDelete('cascade');
+        });

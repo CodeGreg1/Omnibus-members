@@ -1,0 +1,2 @@
+
+    <script src="{{ url('plugins/bootstrap-daterangepicker/js/daterangepicker.js') }}"></script>

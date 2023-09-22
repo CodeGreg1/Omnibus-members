@@ -1,0 +1,13 @@
+"use strict";
+
+// define app.$CRUD_LOWER$$STUDLY_NAME$ object
+app.$CRUD_LOWER$$STUDLY_NAME$ = {};
+$TINYMCE_CONFIG_SCRIPT$
+
+// initialize functions of app.$CRUD_LOWER$$STUDLY_NAME$ object
+app.$CRUD_LOWER$$STUDLY_NAME$.init = function() {
+    $TINYMCE_INIT_SCRIPT$
+};
+
+// initialize app.$CRUD_LOWER$$STUDLY_NAME$ object until the document is loaded
+$(document).ready(app.$CRUD_LOWER$$STUDLY_NAME$.init());

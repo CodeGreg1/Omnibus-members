@@ -1,0 +1,137 @@
+.card-header {
+    &:hover {
+        .btn-edit-subject {
+            display: inline-block;
+        }
+    }
+}
+
+.ticket-subject {
+    width: 100%;
+
+    > span {
+        &.ticket-number {
+            float: right;
+        }
+    }
+
+    .btn-edit-subject {
+        display: none;
+        font-size: 12px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
+
+.convo-actions-wrapper {
+    background: rgba(0,0,0,.03);
+    margin-top: -20px;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .btn {
+        transition: 1s;
+
+        &[disabled],
+        &[disabled]:hover {
+            color: #fff !important;
+            box-shadow: none !important;
+            border-color: transparent !important;
+            background: rgba(0,0,0,0.5) !important;
+        }
+    }
+}
+
+.convo-reply-form {
+    display: block;
+    margin-top: -25px;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.03);
+    display: none;
+
+    .form-alert-message {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .card-footer {
+        padding: 0;
+        height: 45px;
+    }
+}
+
+.conversation-list {
+    .conversation-attachments-wrapper {
+        border-left: 2px solid #ddd;
+        padding-left: 15px;
+        padding-bottom: 0;
+
+        > .heading {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        .conversation-attachments {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            > li {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: unset;
+            }
+        }
+    }
+
+    .media {
+        &:hover {
+            .convo-list-actions {
+                display: block;
+            }
+        }
+
+        .convo-list-actions {
+            display: none;
+        }
+        
+        &.note-media {
+            background: #fcf4e8;
+            margin-left: -25px;
+            margin-right: -25px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            margin-top: -20px;
+        }
+    }
+}
+
+.convo-list-actions {
+    i {
+        cursor: pointer;
+    }
+}
+
+.tickets-user-column {
+    width: 30%;
+}
+
+.ticket-remove-attachement {
+    margin-left: 8px;
+    color: #969696;
+    cursor: pointer;
+
+    i {
+        font-size: 10px;
+    }
+}

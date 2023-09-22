@@ -1,0 +1,12 @@
+#admin-services-create-form,
+#admin-services-edit-form {
+	.select2-selection--single {
+		&.services-icon {
+			.select2-selection__rendered {
+				> span {
+					line-height: 28px;
+				}
+			}
+		}
+	}
+}

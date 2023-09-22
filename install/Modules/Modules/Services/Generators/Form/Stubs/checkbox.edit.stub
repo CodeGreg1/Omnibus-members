@@ -1,0 +1,17 @@
+
+
+                            <div class="col-12 col-md-12">
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" 
+                                            name="$FORM_FIELD_NAME$"
+                                            class="custom-control-input" 
+                                            id="$FORM_FIELD_NAME$"
+                                            value="1"
+                                            {{ $$LOWER_NAME$->$FORM_FIELD_NAME$ == 1 ? 'checked' : '' }}$FORM_FIELD_VALIDATION$>
+                                        <label class="custom-control-label" for="$FORM_FIELD_NAME$">@lang('$FORM_FIELD_VISUAL$') <span class="text-muted">(@lang('$FORM_VALIDATION_VISUAL$'))</span></label>
+                                    </div>$FORM_FIELD_HELP$
+                                </div>
+                                
+                            </div>

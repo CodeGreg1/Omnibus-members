@@ -1,0 +1,76 @@
+/* Custom bootstrap toast */
+.toast {
+	&.toast-black {
+		background: black;
+    	color: white;
+	}
+}
+
+.toast-notify {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* Form card */
+.card-form {
+	.form-alert-message {
+	    margin-left: 25px;
+	    margin-right: 25px;
+	    margin-top: 25px;
+	}
+	.card-footer {
+		height: 84px;
+	}
+}
+
+/* Modal form */
+.modal-form {
+	.modal-footer {
+		margin-left: -25px;
+	    margin-right: -25px;
+	    margin-bottom: -25px;
+	}
+}
+.ts-wrapper .ts-control {
+	font-size: 14px;
+    padding: 10px 15px;
+    height: 42px;
+}
+.ts-wrapper.focus .ts-control {
+    box-shadow: none;
+	border-color: var(--primary);
+    outline: 0;
+}
+
+/* Alert notification */
+.alert-notification {
+	display: none;
+}
+
+/* Useful for showing validation error for a group input */
+.group-error {
+	color: red;
+	border: 1px solid red;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    border-radius: 4px;
+}
+
+/** Datatable custom */
+.E0991-Datatable {
+	.tb-id-column,
+	.tb-actions-column {
+		width: 1%;
+	}
+
+	.img-thumbnail {
+	    margin-left: 5px;
+	}
+
+	.badge-counter {
+		padding: 3px 6px;
+	}
+}

@@ -1,0 +1,12 @@
+
+
+                            <div class="col-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="$BELONGS_TO_FOREIGN_FORM_FIELD_NAME$">@lang('$FORM_FIELD_VISUAL$') <span class="text-muted">(@lang('$FORM_VALIDATION_VISUAL$'))</span></label>
+                                    <select name="$BELONGS_TO_FOREIGN_FORM_FIELD_NAME$[]" class="form-control select2" data-placeholder="@lang('Select $FOREIGN_FORM_FIELD_PLACEHOLDER_NAME$')" multiple$FORM_FIELD_VALIDATION$>
+                                        @foreach($$FOREIGN_FORM_FIELD_VARIABLE_NAME$ as $id => $entry)
+                                            <option value="{{ $id }}">{{ $entry }}</option>
+                                        @endforeach
+                                    </select>$FORM_FIELD_HELP$
+                                </div>
+                            </div>

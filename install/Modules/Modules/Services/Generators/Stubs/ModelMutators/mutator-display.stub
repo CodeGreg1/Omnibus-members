@@ -1,0 +1,13 @@
+
+
+    /**
+     * Get the $SINGULAR_LOWER_NAME_SPACED$'s $FIELD_NAME_SPACED$
+     *
+     * @param $value
+     * 
+     * @return string
+     */
+    public function get$FIELD_NAME_STUDLY$Attribute($value)
+    {
+        return self::$FIELD_NAME_UPPER$_$FIELD_TYPE_UPPER$[$value] ?? '';
+    }

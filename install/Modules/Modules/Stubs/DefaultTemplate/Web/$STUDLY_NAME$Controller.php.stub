@@ -1,0 +1,56 @@
+<?php
+
+namespace Modules\$STUDLY_NAME$\Http\Controllers\Web$CRUD_STUDLY_START_SLASH$;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+use Modules\Base\Support\JsPolicy;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$Created;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$Deleted;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$Updated;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$Restored;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$ForceDeleted;
+use Illuminate\Contracts\Support\Renderable;
+use Modules\Base\Http\Controllers\Web\BaseController;
+use Modules\$STUDLY_NAME$\Repositories\$MODEL_PLURAL$Repository;
+use Modules\$STUDLY_NAME$\Http\Requests\$CRUD_STUDLY$Store$MODEL$Request;
+use Modules\$STUDLY_NAME$\Http\Requests\$CRUD_STUDLY$Update$MODEL$Request;$UPLOAD_USE_MEDIA_CLASS_MODEL$
+$FOREIGN_CONTROLLER_IMPORT_NAMESPACE$
+class $STUDLY_NAME$Controller extends BaseController
+{   
+    /**
+     * @var $MODEL_PLURAL$Repository $$CAMEL_NAME$
+     */
+    protected $$CAMEL_NAME$;
+
+    /**
+     * @var string $redirectTo
+     */
+    protected $redirectTo = '/$CRUD_LOWER_END_SLASH$$PLURAL_KEBAB_NAME$';
+
+    /**
+     * @param $MODEL_PLURAL$Repository $$CAMEL_NAME$
+     * 
+     * @return void
+     */
+    public function __construct($MODEL_PLURAL$Repository $$CAMEL_NAME$) 
+    {
+        $this->$CAMEL_NAME$ = $$CAMEL_NAME$;
+
+        parent::__construct();
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Renderable
+     */
+    public function index()
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.index');
+
+        return view('$LOWER_NAME$::$CRUD_LOWER_END_DOT$index', [
+            'pageTitle' => __('$PLURAL_START_UPPER_NAME_SPACED$'),
+            'policies' => JsPolicy::get('$PLURAL_KEBAB_NAME$')
+        ]);
+    }$CREATE_CONTROLLER$$SHOW_CONTROLLER$$EDIT_CONTROLLER$$DELETE_CONTROLLER$$DELETE_MULTI_CONTROLLER$$SOFT_DELETES_CONTROLLER_FUNCTIONS$$UPLOAD_CONTROLLER_MEDIA_DELETE_METHOD$
+}

@@ -1,0 +1,2 @@
+
+<svg width="145" height="85" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M0 0h145v85H0z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-opacity="0" fill="#FFF" xlink:href="#a"/><g mask="url(#b)"><g transform="translate(45 20)"><rect fill="#8E959B" x="32" y="37" width="24" height="8" rx="1"/><rect fill="#D7D9DA" width="43" height="6" rx="2"/><rect fill="#D7D9DA" y="10" width="56" height="23" rx="2"/></g></g></g></svg>

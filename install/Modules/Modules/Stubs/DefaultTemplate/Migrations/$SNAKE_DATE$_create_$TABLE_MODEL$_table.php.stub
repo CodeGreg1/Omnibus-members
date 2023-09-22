@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Create$MODEL_PLURAL$Table extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('$TABLE_MODEL$', function (Blueprint $table) {
+            $table->id();
+            $MIGRATIONS_COLUMNS$
+            $table->timestamps();$MIGRATIONS_SOFT_DELETES_COLUMN$$FOREIGN_MIGRATIONS_COLUMNS$
+        });$BELONGS_TO_MANY_MIGRATIONS$
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('$TABLE_MODEL$');$BELONGS_TO_MANY_MIGRATION_TABLE$
+    }
+}

@@ -1,0 +1,82 @@
+.table-custom-deposit {
+    th {
+        height: auto!important;
+        padding: 12px 25px!important;
+    }
+    tbody td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .svg-icon svg {
+        width: 55px;
+        height: 55px;
+    }
+}
+.checkout-overview {
+    .input-group-prepend .input-group-text.text-lg {
+        border-color: rgba(255, 255, 255, 0.25);
+        height: calc(1.5em + 1rem + 2px);
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        background-color: transparent;
+        color: #fff;
+    }
+    label {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .form-control, .custom-select {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    select option {
+        margin: 40px;
+        background: #494444;
+        color: #fff;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+
+.checkout-payment {
+    .checkout-gateway-label {
+
+    }
+}
+
+.checkout-gateway-logo {
+    margin-top: -10px;
+
+    .logo-container {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            height: 80px;
+            width: 80px;
+        }
+        img {
+            height: auto;
+            width: 80px;
+        }
+    }
+}
+select.form-control-lg {
+    height: calc(1.5em + 1rem + 2px)!important;
+    padding: 0.5rem 1rem!important;
+    font-size: 1.25rem!important;
+    line-height: 1.5!important;
+    border-radius: 0.3rem!important;
+}
+.input-group-prepend .form-control {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+.image-upload-preview {
+    max-width: 300px;
+}
+#deposits .card-body .form-group:last-child {
+    margin-bottom: 0;
+}

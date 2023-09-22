@@ -1,0 +1,11 @@
+#gateway-tablist-content {
+	.gateway-settings-tab {
+		.nav-item {
+			.nav-link {
+				&.active {
+					background: #eee;
+				}
+			}
+		}
+	}
+}

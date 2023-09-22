@@ -1,0 +1,17 @@
+.cookie-consent {
+	background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    transition: bottom 0.5s;
+    z-index: 9999;
+    color: #fff;
+    border-radius: 10px;
+
+    h5, p {
+    	color: #fff;
+    }
+}

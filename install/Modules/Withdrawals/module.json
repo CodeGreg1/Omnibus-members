@@ -1,0 +1,13 @@
+{
+    "name": "Withdrawals",
+    "alias": "withdrawals",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Withdrawals\\Providers\\WithdrawalsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

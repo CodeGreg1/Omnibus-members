@@ -1,0 +1,19 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register $CRUD_LOWER$ routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+Route::group(['prefix' => '$CRUD_LOWER$/$PLURAL_KEBAB_NAME$', 'as' => '$CRUD_LOWER_END_DOT$', 'namespace' => '$CRUD_STUDLY$'], function()
+{   
+    Route::group(['middleware' => ['auth', 'verified', 'can:$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.index']], function() {
+        Route::get('/', '$STUDLY_NAME$Controller@index')->name('$PLURAL_KEBAB_NAME$.index');$CREATE_ROUTE$$SHOW_ROUTE$$EDIT_ROUTE$$DELETE_ROUTE$$DELETE_MULTI_ROUTE$$SOFT_DELETES_ROUTES$
+        Route::get('/datatable', '$STUDLY_NAME$DatatableController@index')->name('$PLURAL_KEBAB_NAME$.datatable');$UPLOAD_DELETE_MEDIA_ROUTE$
+    });
+});

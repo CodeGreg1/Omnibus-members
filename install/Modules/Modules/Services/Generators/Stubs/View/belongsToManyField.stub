@@ -1,0 +1,9 @@
+
+                            <tr>
+                                <th scope="row">@lang('$FORM_FIELD_VISUAL$')</th>
+                                <td>
+                                    @foreach($$LOWER_NAME$->$FORM_FIELD_NAME$ as $entry)
+                                        <span class="badge badge-info">{{ $entry$FOREIGN_FORM_FIELD_NAME$ }}</span>
+                                    @endforeach
+                                </td>
+                            </tr>

@@ -1,0 +1,8 @@
+
+                            <div class="col-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="$FORM_FIELD_NAME$">@lang('$FORM_FIELD_VISUAL$') <span class="text-muted">(@lang('$FORM_VALIDATION_VISUAL$'))</span></label>
+                                    <textarea name="$FORM_FIELD_NAME$"$FORM_TEXTAREA_TINYMCE_ID$
+                                        class="form-control$FORM_TEXTAREA_TINYMCE_CLASS$"$FORM_FIELD_VALIDATION$>{{ $$LOWER_NAME$->$FORM_FIELD_NAME$ }}</textarea>$FORM_FIELD_HELP$
+                                </div>
+                            </div>

@@ -1,0 +1,68 @@
+/* Users datatable */
+.users-avatar-row {
+	width: 3%;
+}
+
+.users-status-row {
+	width: 5%;
+}
+
+.users-joined-row,
+.users-last-login-row {
+	width: 10%;
+}
+
+.profile-widget-item-value {
+	&.user-role {
+		.badge {
+			padding-top: 5px;
+    		padding-bottom: 5px;
+    		margin-top: 5px;
+		}
+	}
+}
+
+#admin-user-activities-datatable {
+	.description-column {
+		width: 35%;
+	}
+}
+
+.admin-view-user {
+	.profile-widget {
+		margin-top: 0;
+
+		.profile-widget-picture {
+			left: 50%;
+		    transform: translate(-50%, 0);
+		    margin: 20px 0;
+		    float: none;
+		}
+
+		.profile-widget-items {
+		    display: block;
+			padding-right: 20px;
+
+			.profile-widget-item {
+				border-top: 1px solid #f2f2f2;
+			}
+		}
+	}
+
+	.card-footer {
+		padding: 20px 20px;
+	}
+
+	@media (max-width: 529px) {
+		.user-menu {
+			.nav-item {
+				width: 100%;
+			}
+		}
+	}
+
+	.profile-widget-description {
+	    margin-top: -5px;
+	}
+	
+}

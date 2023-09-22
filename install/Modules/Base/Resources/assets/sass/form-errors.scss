@@ -1,0 +1,45 @@
+/*Form Validation Error Styles*/
+$error-color: red;
+
+.form-group {
+	&.error {
+		label,
+		.message, .list-group-item.error [data-dz-name] {
+			color: $error-color;
+		}
+
+		.message:nth-child(n+1) {
+			margin-bottom: 0;
+		}
+
+		.form-control,
+		.select2-selection,
+		.tox-tinymce {
+			border: 1px solid $error-color;
+		}
+
+		.dropzone {
+			.dz-default.dz-message {
+				border: 1px solid $error-color;
+			}
+
+			.dz-preview {
+				margin-top: 10px;
+			}
+
+			.dropzone-required-error {
+				margin-top: -8px;
+			}
+		}
+
+		.dz-preview-multiple {
+			> .list-group-item.error {
+				border: 1px solid $error-color !important;
+			}
+		}
+
+		.form-help {
+			display: none;
+		}
+	}
+}

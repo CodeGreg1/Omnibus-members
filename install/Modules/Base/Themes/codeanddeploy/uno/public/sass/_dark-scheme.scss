@@ -1,0 +1,271 @@
+$bg-dark: var(--frontend-dark-color-scheme);
+
+body.dark-scheme {
+	background: $bg-dark;
+
+	.navbar-area {
+		background: $bg-dark;
+		border-bottom: 1px solid var(--frontend-dark-color-scheme-lighten-4);
+	}
+
+	.page-article-inner {
+		background: var(--frontend-dark-color-scheme-lighten-4) !important;
+		box-shadow: 1px 1px 5px var(--frontend-dark-color-scheme-darken-4) !important;
+	}
+
+	.article.article-style-d {
+		background: var(--frontend-dark-color-scheme-lighten-4) !important;
+	}
+
+	.card .card-header {
+		border-bottom-color: var(--frontend-dark-color-scheme-darken-4) !important;
+	}
+
+	.page-sidebar {
+		border: 1px solid var(--frontend-dark-color-scheme-darken-4) !important;
+		box-shadow: 1px 1px 5px var(--frontend-dark-color-scheme-darken-4) !important;
+	}
+
+	section {
+		background: $bg-dark;
+
+		&.bg-lighten {
+			$bg-lighten: var(--frontend-dark-color-scheme-lighten-2);
+
+			background: $bg-lighten !important;
+
+			.card,
+			.number-info,
+			.testimonial-bubble,
+			.boxed-content,
+			.single-pricing,
+			.single-accordion,
+			.accordion-content,
+			.blog-section .single-blog,
+			.accordion-style .single-accordion .accordion-btn button,
+			.team-section .team-member {
+				background: var(--frontend-dark-light-color-scheme-lighten-4) !important;
+			}
+
+			.number-info,
+			.boxed-content,
+			.single-pricing,
+			.single-accordion,
+			.blog-section .single-blog,
+			.team-section .team-member {
+				box-shadow: 1px 1px 5px var(--frontend-dark-light-color-scheme-darken-4) !important;
+			}
+
+			.testimonial-bubble:after {
+				border-color: var(--frontend-dark-light-color-scheme-lighten-4) transparent !important;
+			}
+		}
+	}
+
+	.footer {
+		background: $bg-dark !important;
+		border-top: 1px solid var(--frontend-dark-color-scheme-lighten-4) !important;
+
+		.copyright-area {
+			border-top: 1px solid var(--frontend-dark-color-scheme-lighten-4) !important;
+		}
+	}
+
+	.list-group-item a strong,
+	.team-section .team-member strong,
+	.hero-section .hero-content-wrapper h1,
+	.pricing-section .single-pricing .pricing-frequency,
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff !important;
+	}
+
+	.card,
+	.number-info,
+	.boxed-content,
+	.single-pricing,
+	.single-accordion,
+	.accordion-content,
+	.testimonial-bubble,
+	.blog-section .single-blog,
+	.list-group-custom .list-group-item,
+	.accordion-style .single-accordion .accordion-btn button,
+	.team-section .team-member {
+		background: var(--frontend-dark-color-scheme-lighten-4) !important;
+	}
+
+	.number-info,
+	.boxed-content,
+	.single-pricing,
+	.single-accordion,
+	.blog-section .single-blog,
+	.team-section .team-member {
+		box-shadow: 1px 1px 5px var(--frontend-dark-color-scheme-darken-4) !important;
+	}
+
+	.testimonial-bubble:after {
+		border-color: var(--frontend-dark-color-scheme-lighten-4) transparent !important;
+	}
+
+	.testimonial-author .author-name,
+	.accordion-style .single-accordion .accordion-btn button {
+		color: #fff;
+	}
+
+	p,
+	em,
+	span,
+	small,
+	label,
+	strong,
+	.list a,
+	.accordion-content,
+	.article .article-meta i,
+	.article .article-meta a,
+	.testimonial-author em,
+	.contact-section .contact-info a,
+	.blog-section .single-blog .blog-content p,
+	.team-section .team-member .social-icon>li>a,
+	.pricing-section .single-pricing .pricing-item-details {
+		color: rgba(255,255,255,0.9) !important;
+	}
+
+	.hero-section .hero-content-wrapper h2 {
+		color: var(--frontend-primary-color) !important;
+	}
+
+	.contact-section .contact-info a:hover,
+	.contact-section .contact-info a:focus {
+		color: var(--frontend-primary-color) !important;
+	}
+
+	.form-control {
+		background: rgb(255 255 255 / 10%);
+	    border: 1px solid rgb(255 255 255 / 30%);
+	    color: #fff;
+	}
+
+	input, select, textarea {
+		&::placeholder {
+			color: rgba(255,255,255,0.9);
+		}
+	}
+
+	.blog-section .single-blog .blog-img .date-meta {
+		background: $bg-dark !important;
+		border: none;
+		color: rgba(255,255,255,0.9);
+	}
+
+	p,
+	.list.list-fadeIn li:before {
+	    color: rgba(255,255,255,0.9) !important;
+	}
+
+	.list a {
+		span {
+			&:hover {
+				color: var(--frontend-primary-color) !important;
+			}
+		}
+	}
+
+	.list-group {
+		.list-group-item {
+			&:hover {
+				strong {
+					color: var(--frontend-primary-color) !important;
+				}
+			}
+		}
+	}
+
+	.list a {
+		&:hover {
+			color: var(--frontend-primary-color) !important;
+		}
+	}
+
+	.bg-overlay.default-overlay:before {
+		background: $bg-dark;
+	}
+
+	.article .article-meta a:hover,
+	.hero-section .hero-content-wrapper h2:after {
+		color: var(--frontend-primary-color) !important;
+	}
+
+	section.bg-image.bg-overlay .sub-heading:after, section.bg-image.bg-overlay .sub-heading:before {
+		background: var(--frontend-primary-color) !important;
+	}
+
+	.list-group-custom .list-group-item:not(:last-child) {
+		border-bottom: 1px solid var(--frontend-dark-color-scheme-darken-1);
+	}
+
+	.article .footer-social-links li a {
+	    background: var(--frontend-dark-color-scheme-darken-2) !important;
+
+	    &:hover {
+	    	background: var(--frontend-primary-color) !important;
+	    }
+	}
+
+	.article-other-articles {
+		a {
+			&:hover {
+				.post-page-title {
+					color: var(--frontend-primary-color) !important;
+				}
+			}
+		}
+	}
+
+	.page-header {
+		&:not(.bg-image),
+		&:not(.has-background-image) {
+			background: var(--frontend-dark-color-scheme-lighten-4)!important;
+		}
+
+		.breadcrumb {
+			li {
+				color: #fff !important;
+				
+				a {
+					color: #fff !important;
+
+					&:hover {
+						color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 991px) {
+		.navbar-nav .nav-item a:not(.btn) {
+			color: #fff;
+		}
+
+		.navbar-nav .sub-menu .nav-item a:not(.btn) {
+			color: inherit;
+		}
+
+		.navbar-nav .nav-item:hover > a:not(.btn) {
+			color: var(--frontend-navbar-menu-text-hover-color)!important;
+		}
+
+		.navbar-nav .nav-item a:not(.btn).active {
+			color: var(--frontend-navbar-menu-text-active-color)!important;
+		}
+
+		.navbar-toggler .toggler-icon {
+			color: #fff;
+		}
+	}
+
+	//client section
+	.client-list li:before,
+	.client-list li:after {
+		border-color: rgba(255,255,255,0.2);
+	}
+}

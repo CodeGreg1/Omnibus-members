@@ -1,0 +1,14 @@
+/*===========================
+    04. Map CSS
+===========================*/
+
+.map-section {
+  margin-top: -130px;
+
+  @media #{$md} {
+    margin-top: 130px;
+  }
+  @media #{$xs} {
+    margin-top: 130px;
+  }
+}

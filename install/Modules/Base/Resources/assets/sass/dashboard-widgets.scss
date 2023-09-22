@@ -1,0 +1,31 @@
+.card-statistic-colored-bg {
+	.card-header {
+		h4 {
+			color: #f4f4f4 !important;
+		}
+	}
+
+	.card-body {
+		color: white !important;
+	}
+
+	&.bg-primary {
+		background: rgb(103 119 239 / 70%) !important;
+	}
+
+	&.bg-success {
+		background: rgb(71 195 99 / 70%) !important;
+	}
+
+	&.bg-warning {
+		background: rgb(255 164 38 / 70%) !important;
+	}
+
+	&.bg-danger {
+	    background: rgb(252 84 75 / 70%) !important;
+	}
+
+	&.bg-info {
+	    background: rgb(58 186 244 / 70%) !important;
+	}
+}

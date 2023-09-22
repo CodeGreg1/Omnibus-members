@@ -1,0 +1,8 @@
+
+
+            $table->$MIGRATIONS_FIELD_UNSIGNED$('$MIGRATIONS_FIELD_NAME$'$MIGRATIONS_FIELD_MAX_LENGTH$);
+
+$table->foreign('$MIGRATIONS_FIELD_NAME$', '$MIGRATIONS_RELATED_PK_NAME$')
+                ->references('id')
+                ->on('$MIGRATIONS_RELATED_TABLE_NAME$')
+                ->onDelete('cascade');

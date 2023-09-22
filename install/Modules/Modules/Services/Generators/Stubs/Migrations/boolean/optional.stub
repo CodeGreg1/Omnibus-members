@@ -1,0 +1,2 @@
+            
+            $table->boolean('$MIGRATIONS_FIELD_NAME$')->default(0)->nullable();

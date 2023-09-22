@@ -1,0 +1,41 @@
+
+    
+    /**
+     * Remove the specified $SINGULAR_LOWER_NAME_SPACED$.
+     * 
+     * @authenticated
+     * @urlParam id integer required The ID of the $SINGULAR_LOWER_NAME_SPACED$.
+     * 
+     * @response status=200 scenario="Success" {
+     *      "success": true,
+     *      "message": "$MODEL$ deleted successfully."
+     * }
+     * @response status=404 scenario="Not Found" {
+     *    "success": false,
+     *    "message": "Resource Not Found"
+     * }
+     * @response status=401 scenario="Unauthenticated" {
+     *       "message": "Unauthenticated."
+     * }
+     * @response status=403 scenario="Unauthorized" {
+     *       "message": "This action is unauthorized."
+     * }
+     * 
+     * @param integer $id
+     * @return JsonResource
+     */ 
+    public function destroy($id)
+    {
+        authorize([
+            'user.$PLURAL_KEBAB_NAME$.delete', 
+            'admin.$PLURAL_KEBAB_NAME$.delete'
+        ]);
+
+        $model = $this->$CAMEL_NAME$->findOrFail($id);
+
+        $this->$CAMEL_NAME$->delete($model);
+        
+        event(new $STUDLY_NAME$Deleted($model));
+        
+        return $this->successResponse(__('$SINGULAR_START_UPPER_NAME_SPACED$ deleted successfully.'));
+    }

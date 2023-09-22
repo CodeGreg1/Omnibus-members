@@ -1,0 +1,40 @@
+/* breadcrumb */
+
+.breadcrumb {
+	background-color: transparent;
+	
+	> li {
+		color: var(--frontend-breadcrumb-text-color);
+		
+		&.active {
+			color: var(--frontend-breadcrumb-text-color);
+		}
+	}
+
+	a {
+		color: var(--frontend-breadcrumb-text-color);
+
+		&:hover, &:focus {
+			text-decoration: none;
+			color: var(--frontend-breadcrumb-text-hover-color);
+		}
+	}
+
+	&.link-accent {
+		> li.active {
+			color: inherit;
+		}
+
+		a {
+			&:hover, &:focus {
+				text-decoration: none;
+				color: var(--frontend-breadcrumb-text-hover-color);
+			}
+		}
+	}
+
+	> li + li:before {
+		padding: 0 7px;
+		content: "|";
+	}
+}

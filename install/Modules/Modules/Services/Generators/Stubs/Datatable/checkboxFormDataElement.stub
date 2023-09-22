@@ -1,0 +1,9 @@
+,
+                element: function(row) {
+                    var html = '<div class="custom-control custom-checkbox">';
+                        html += '<input type="checkbox" class="custom-control-input" id="col-'+row.id+'" '+(row.$DATATABLE_FIELD_NAME$==1?'checked':'')+' disabled>';
+                        html += '<label class="custom-control-label" for="col-'+row.id+'"></label>';
+                    html += '</div>';
+
+                    return $(html);
+                }

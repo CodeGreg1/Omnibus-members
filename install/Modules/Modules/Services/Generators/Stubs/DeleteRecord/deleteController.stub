@@ -1,0 +1,19 @@
+
+
+    /**
+     * Remove the specified resource from storage.
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function destroy(Request $request)
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.delete');
+
+        $model = $this->$CAMEL_NAME$->findOrFail($request->id);
+
+        $this->$CAMEL_NAME$->delete($model);
+        
+        event(new $STUDLY_NAME$Deleted($model));
+        
+        return $this->successResponse(__('$SINGULAR_START_UPPER_NAME_SPACED$ deleted successfully.'));
+    }

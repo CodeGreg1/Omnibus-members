@@ -1,0 +1,2 @@
+
+                        if(row.deleted_at === null) 

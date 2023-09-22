@@ -1,0 +1,69 @@
+/*===========================
+    13. Default CSS 
+===========================*/
+
+// Rounded
+.rounded {
+  border-radius: 10px;
+}
+
+// Margin-top
+@for $i from 1 through 100 {
+  .mt-#{1 * $i}{margin-top: 1px * $i;}
+}
+
+// Margin-bottom
+@for $i from 1 through 100 {
+  .mb-#{1 * $i}{margin-bottom: 1px * $i;}
+}
+
+// Margin-left
+@for $i from 1 through 100 {
+  .ml-#{1 * $i}{margin-left: 1px * $i;}
+}
+
+// Margin-right
+@for $i from 1 through 100 {
+  .mr-#{1 * $i}{margin-right: 1px * $i;}
+}
+
+// Padding-top
+.pt-0 {
+  padding-top: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pt-#{1 * $i}{padding-top: 1px * $i;}
+}
+
+// Padding-bottom
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pb-#{1 * $i}{padding-bottom: 1px * $i;}
+}
+
+// Padding-left
+.pl-0 {
+  padding-left: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pl-#{1 * $i}{padding-left: 1px * $i;}
+}
+
+// Padding-right
+.pr-0 {
+  padding-right: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pr-#{1 * $i}{padding-right: 1px * $i;}
+}
+
+// Z-index
+@for $i from 1 through 1000 {
+  .z-index-#{1 * $i}{z-index: 1 * $i;}
+}
+// Border Radius
+@for $i from 1 through 100 {
+  .br-#{1 * $i}{border-radius: 1px * $i;}
+}

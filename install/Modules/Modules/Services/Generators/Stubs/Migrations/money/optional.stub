@@ -1,0 +1,2 @@
+            
+            $table->decimal('$MIGRATIONS_FIELD_NAME$'$MIGRATIONS_FIELD_FLOAT_LENGTH_AND_ACCURACY$)->nullable();

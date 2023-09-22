@@ -1,0 +1,26 @@
+<?php
+
+namespace Modules\Dashboard\Services;
+
+class Widgets {
+
+    /**
+     * List of available widgets to display in the dashboard
+     * 
+     * @var array $settings
+     */
+    protected $settings = [
+$SETTINGS$
+    ];
+
+    /**
+     * Get the available widgets with array
+     * 
+     * @return array
+     */
+    public function get() 
+    {
+    	return $this->settings;
+    }
+
+}

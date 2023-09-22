@@ -1,0 +1,2 @@
+
+    <script src="{{ url('plugins/tinymce/js/tinymce.min.js') }}"></script>

@@ -1,0 +1,3 @@
+            
+            '$VALIDATION_FIELD$.*' => 'integer',
+            '$VALIDATION_FIELD$' => 'required|array',

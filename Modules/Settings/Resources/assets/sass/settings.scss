@@ -1,0 +1,13 @@
+.setting-file-thumbnail {
+	height: 70px;
+}
+
+.display-flex {
+	display: flex;
+}
+
+#settings-default_profile_photo-dropzone {
+	[data-dz-thumbnail] {
+	    width: 20%;
+	}
+}

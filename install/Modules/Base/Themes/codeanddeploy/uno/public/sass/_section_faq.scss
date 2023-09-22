@@ -1,0 +1,51 @@
+.faq-section {
+  padding-bottom: 55px;
+
+  @media (min-width: 992px) {
+      padding-bottom: 95px;
+  }
+
+  .accordion-style {
+    .single-accordion {
+      margin-bottom: 25px;
+      @include bg-white-box-shadow;
+    }
+  }
+
+  &.bg-gray {
+    .single-accordion {
+      @include bg-gray-box-shadow;
+
+      .accordion-content {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &.bg-image {
+    &.bg-overlay {
+      .accordion-style {
+        .single-accordion {
+          border: 2px solid rgb(255 255 255 / 30%);
+          box-shadow: none;
+          background: rgb(255 255 255 / 20%);
+
+          .accordion-btn {
+            button {
+              background: transparent;
+              color: $white;
+
+              &:after {
+                color: rgb(255 255 255 / 30%);
+              }
+            }
+          }
+
+          .accordion-content {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}

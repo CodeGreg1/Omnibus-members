@@ -1,0 +1,2 @@
+
+        Route::delete('/multi-delete', '$STUDLY_NAME$Controller@multiDestroy')->name('$PLURAL_KEBAB_NAME$.multi-delete');

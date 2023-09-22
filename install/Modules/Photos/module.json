@@ -1,0 +1,13 @@
+{
+    "name": "Photos",
+    "alias": "photos",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Photos\\Providers\\PhotosServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

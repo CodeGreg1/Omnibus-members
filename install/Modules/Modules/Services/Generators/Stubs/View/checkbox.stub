@@ -1,0 +1,8 @@
+
+                            <tr>
+                                <th scope="row">@lang('$FORM_FIELD_VISUAL$')</th>
+                                <td><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="col-$FORM_FIELD_NAME$" {{ $$LOWER_NAME$->$FORM_FIELD_NAME$ == 1 ? 'checked' : '' }} disabled><label class="custom-control-label" for="col-$FORM_FIELD_NAME$"></label></div></td>
+                            </tr>
+
+
+                        

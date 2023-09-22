@@ -1,0 +1,22 @@
+{
+    "Roles": "Rollen",
+    "Create new role": "Neue Rolle erstellen",
+    "Role created successfully.": "Rolle erfolgreich erstellt.",
+    "Edit role": "Rolle bearbeiten",
+    "Role updated successfully.": "Rolle erfolgreich aktualisiert.",
+    "Selected role(s) deleted successfully.": "Ausgew\u00e4hlte Rolle(n) erfolgreich gel\u00f6scht.",
+    "Assign Permissions": "Berechtigungen zuweisen",
+    "Description": "Beschreibung",
+    "Display Name": "Anzeigename",
+    "Name": "Name",
+    "Permission": "Genehmigung",
+    "Update Permissions": "Berechtigungen aktualisieren",
+    "Your about to delete user role(s)!": "Sie sind dabei, Benutzerrolle(n) zu l\u00f6schen!",
+    "role": "rolle",
+    "roles": "rollen",
+    "No roles were found!": "Es wurden keine Rollen gefunden!",
+    "Delete selected roles": "Ausgew\u00e4hlte Rollen l\u00f6schen",
+    "Role Type": "Rollentyp",
+    "Select Type": "Art ausw\u00e4hlen",
+    "Type": "Typ"
+}

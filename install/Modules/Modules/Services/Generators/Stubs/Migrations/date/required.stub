@@ -1,0 +1,2 @@
+            
+            $table->date('$MIGRATIONS_FIELD_NAME$'$MIGRATIONS_FIELD_MAX_LENGTH$);

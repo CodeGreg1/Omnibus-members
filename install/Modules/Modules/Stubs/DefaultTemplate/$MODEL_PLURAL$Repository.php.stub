@@ -1,0 +1,16 @@
+<?php
+
+namespace Modules\$STUDLY_NAME$\Repositories;
+
+use Modules\$STUDLY_NAME$\Models\$MODEL$;
+use Modules\Base\Repositories\BaseRepository;
+
+class $MODEL_PLURAL$Repository extends BaseRepository
+{
+    /**
+     * Specify Model class name
+     *
+     * @return string
+     */
+    protected $model = $MODEL$::class;
+}

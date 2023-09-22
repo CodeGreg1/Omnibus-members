@@ -1,0 +1,7 @@
+
+    restore: {
+        route: '/$CRUD_LOWER_END_SLASH$$PLURAL_KEBAB_NAME$/restore'
+    },
+    forceDelete: {
+        route: '/$CRUD_LOWER_END_SLASH$$PLURAL_KEBAB_NAME$/force-delete'
+    },

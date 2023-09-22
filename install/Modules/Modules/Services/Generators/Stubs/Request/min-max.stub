@@ -1,0 +1,2 @@
+            
+            '$VALIDATION_FIELD$' => 'min:$MIN$|max:$MAX$|nullable',

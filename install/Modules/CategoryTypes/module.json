@@ -1,0 +1,13 @@
+{
+    "name": "CategoryTypes",
+    "alias": "categorytypes",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CategoryTypes\\Providers\\CategoryTypesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

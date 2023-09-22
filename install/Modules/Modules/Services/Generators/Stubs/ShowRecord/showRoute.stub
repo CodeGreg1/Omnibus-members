@@ -1,0 +1,2 @@
+
+        Route::get('/{id}/show', '$STUDLY_NAME$Controller@show')->name('$PLURAL_KEBAB_NAME$.show');

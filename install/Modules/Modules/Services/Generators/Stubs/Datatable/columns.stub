@@ -1,0 +1,7 @@
+           
+            {
+                title: app.trans('$DATATABLE_FIELD_VISUAL$'),
+                key: '$DATATABLE_FIELD_NAME$$DATATABLE_FIELD_SHOW$',
+                searchable: $DATATABLE_FIELD_SEARCHABLE$,
+                classes: '$LOWER_NAME$-$DATATABLE_FIELD_NAME_SNAKE$-column$DATATABLE_ID_FIELD_CLASS$'$CHECKBOX_DATA_ELEMENT$$DATATABLE_FOREIGN_FIELD_NAME$$DATATABLE_UPLOAD_FIELD_NAME$
+            },

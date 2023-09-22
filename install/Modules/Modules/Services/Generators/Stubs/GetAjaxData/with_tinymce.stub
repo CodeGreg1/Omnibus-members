@@ -1,0 +1,11 @@
+
+// handle getting app.$CAMEL_NAME$$AJAX_OPERATION_TYPE$ object form data with tinyMCE plugin content
+app.$CAMEL_NAME$$AJAX_OPERATION_TYPE$.data = function() {
+    var data = $(this.config.form).serializeArray();
+
+    $.each($('.clients-tinymce-default'), function() {
+        data.push({name: $(this).attr('name'), value: tinyMCE.get($(this).attr('id')).getContent()});
+    });
+    
+    return data;
+};

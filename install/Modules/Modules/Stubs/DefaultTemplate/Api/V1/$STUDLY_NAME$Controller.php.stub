@@ -1,0 +1,72 @@
+<?php
+   
+namespace Modules\$STUDLY_NAME$\Http\Controllers\Api\V1;
+   
+use Illuminate\Http\Request;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$Created;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$Deleted;
+use Modules\$STUDLY_NAME$\Events\$STUDLY_NAME$Updated;
+use Illuminate\Http\Resources\Json\JsonResource;
+use Modules\$STUDLY_NAME$\Transformers\$STUDLY_NAME$Resource;
+use Modules\$STUDLY_NAME$\Repositories\$MODEL_PLURAL$Repository;
+use Modules\Base\Http\Controllers\Api\BaseController;
+use Modules\$STUDLY_NAME$\Http\Requests\ApiStore$MODEL$Request;
+use Modules\$STUDLY_NAME$\Http\Requests\ApiUpdate$MODEL$Request;
+
+/**
+ * @group $STUDLY_NAME$ endpoints
+ *
+ * APIs for managing $LOWER_NAME_SPACED$
+ */ 
+class $STUDLY_NAME$Controller extends BaseController
+{   
+    /**
+     * @var $MODEL_PLURAL$Repository $$CAMEL_NAME$
+     */
+    protected $$CAMEL_NAME$;
+
+    /**
+     * @param $MODEL_PLURAL$Repository $$CAMEL_NAME$
+     *
+     * @return void
+     */
+    public function __construct($MODEL_PLURAL$Repository $$CAMEL_NAME$) 
+    {
+        $this->$CAMEL_NAME$ = $$CAMEL_NAME$;
+    }
+
+    /**
+     * Get all $LOWER_NAME_SPACED$
+     *
+     * @authenticated
+     * @response status=200 scenario="Success" {
+     *    "success": true,
+     *    "message": "All $LOWER_NAME_SPACED$ records.",
+     *    "data": [
+     *        $API_INDEX_COMMENT$
+     *  ]
+     * }
+     * @response status=401 scenario="Unauthenticated" {
+     *       "message": "Unauthenticated."
+     * }
+     * @response status=403 scenario="Unauthorized" {
+     *       "message": "This action is unauthorized."
+     * }
+     * 
+     * @return JsonResource
+     */
+    public function index()
+    {
+        authorize([
+            'user.$PLURAL_KEBAB_NAME$.index', 
+            'admin.$PLURAL_KEBAB_NAME$.index'
+        ]);
+
+        $model = $this->$CAMEL_NAME$->all();$API_CONTROLLER_METHOD_LOAD_RELATION$
+        
+        return $this->successResponse(
+            __('All $LOWER_NAME_SPACED$ records.'), 
+            $STUDLY_NAME$Resource::collection($model)
+        );
+    }$API_CREATE_CONTROLLER$$API_SHOW_CONTROLLER$$API_EDIT_CONTROLLER$$API_DELETE_CONTROLLER$
+}

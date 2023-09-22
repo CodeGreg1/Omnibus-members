@@ -1,0 +1,19 @@
+@extends('app')
+
+@section('module-name', __(strtolower(config('$LOWER_NAME$.name'))))
+
+@section("styles")
+    @parent
+@stop
+
+@section("content")
+
+@stop
+
+@section("scripts")
+    @if(file_exists(public_path() . '/js/tmp/modules/$SNAKE_NAME$.js') && !file_exists(public_path() . '/js/tmp/$CRUD_LOWER_FIRST$$STUDLY_NAME$.js'))
+        <script src="{{ url('js/tmp/modules/$SNAKE_NAME$.js') }}"></script>
+    @endif
+
+    @parent
+@stop

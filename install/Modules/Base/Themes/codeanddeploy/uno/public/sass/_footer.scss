@@ -1,0 +1,158 @@
+/*===========================
+    13. Footer CSS 
+===========================*/
+.footer {
+    position: relative;
+    z-index: 2;
+    background: var(--frontend-footer-bg-color);
+
+    .footer-widget {
+
+        .logo {
+            img {
+                max-width: 200px;
+            }
+        }
+
+        .footer-desc {
+            color: var(--frontend-footer-text-color);
+            line-height: 30px;
+        }
+
+        h3 {
+            color: var(--frontend-footer-heading-color);
+            margin-bottom: 35px;
+            font-weight: 500;
+            font-size: 18px;
+
+            @media #{$lg} {
+                font-size: 22px;
+            }
+        }
+
+        ul.footer-links {
+            list-style-type: none;
+
+            li {
+                a {
+                    color: var(--frontend-footer-text-color);
+                    display: block;
+                    line-height: 35px;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: var(--frontend-primary-color);
+                    }
+                }
+            }
+        }
+
+        .footer-contact {
+
+            li {
+                color: var(--frontend-footer-text-color);
+                
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                > span {
+                    > i {
+                        color: var(--frontend-primary-color);
+                        margin-right: 10px;
+                    }
+
+                    > a {
+                        color: var(--frontend-footer-text-color);
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .copyright-area {
+        border-top: 1px solid rgb(151 151 151 / 19%);
+        padding: 25px 0;
+        font-size: 16px;
+        position: relative;
+        z-index: 2;
+
+        p {
+            color: var(--frontend-footer-text-color);
+            text-align: right;
+            
+            @media #{$xs} {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            @media #{$sm} {
+                font-size: 15px;
+            }
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: var(--frontend-footer-text-color);
+                
+                &:hover {
+                    color: var(--frontend-primary-color);
+                }
+            }
+        }
+    }
+
+}
+
+.footer-social-links {
+    @media #{$xs} {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        justify-content: flex-start;
+
+        @media #{$xs} {
+            justify-content: center;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 45px;
+                background: rgba($body-color, .1);
+                display: block;
+                font-size: 18px;
+                color: hsla(0,0%,100%,.75);
+                margin-right: 15px;
+
+                @media #{$xs} {
+                    padding: 0 7px;
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    background: var(--frontend-primary-color);
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.colored {
+        li {
+            a {
+                background: var(--frontend-primary-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+"use strict";
+
+// define app.$CRUD_LOWER$$STUDLY_NAME$Datatable object
+app.$CRUD_LOWER$$STUDLY_NAME$Datatable = {};$DATATABLE_DELETE_MULTI_FUNCTIONS_SCRIPT$$DATATABLE_SOFT_DELETES_FUNCTIONS_SCRIPT$
+
+// handle app.$CRUD_LOWER$$STUDLY_NAME$Datatable object configuration
+app.$CRUD_LOWER$$STUDLY_NAME$Datatable.config = {
+    delete: {
+        route: '/$CRUD_LOWER_END_SLASH$$PLURAL_KEBAB_NAME$/multi-delete'
+    },$DATATABLE_SOFT_DELETES_CONFIG_ROUTES$
+    datatable: {
+        src: '/$CRUD_LOWER_END_SLASH$$PLURAL_KEBAB_NAME$/datatable',
+        resourceName: { singular: app.trans('$SINGULAR_LOWER_NAME_SPACED$'), plural: app.trans('$PLURAL_LOWER_NAME_SPACED$') },
+        columns: [
+            $DATATABLE_COLUMNS$
+            {
+                title: app.trans('Actions'),
+                key: 'actions',
+                searchable: false,
+                classes: '$LOWER_NAME$-actions-column tb-actions-column',
+                element: function(row) {
+                    var html = '<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
+                        html += '<i class="fas fa-ellipsis-h"></i>';
+                        html += '</button>';
+                        html += '<div class="dropdown-menu">';
+                            $SOFT_DELETE_ACTION_NULLED_OPEN_CONDITION$$SHOW_DATATABLE_BUTTON$$EDIT_DATATABLE_BUTTON$$DELETE_DATATABLE_BUTTON$$SOFT_DELETE_ACTION_NULLED_CLOSE_CONDITION$
+                            $DATATABLE_SOFT_DELETES_ACTIONS$
+
+                        html += '</div>';
+
+                    return $(html);
+                }
+            }
+        ],
+        language: {
+            sortTitle: app.trans('Sort'),
+            noResultsFoundTitle: app.trans("No $PLURAL_LOWER_NAME_SPACED$ were found!")
+        },$DATATABLE_SOFT_DELETES_FILTER_TABS$$DATATABLE_SOFT_DELETES_FILTER_CONTROL$
+        sortControl: {
+            value: '$SORT_CONTROL_VALUE$',
+            options: [
+                { value: 'id__desc', label: app.trans('Latest') },
+                { value: 'id__asc', label: app.trans('Oldest') }$SORT_CONTROL_OPTIONS$
+            ]
+        },
+        bulkActions: [
+            $DATATABLE_DELETE_MULTI_BULK_ACTIONS$
+        ],
+        limit: $DATATABLE_LIMIT$
+    }
+};
+
+// initialize functions of app.$CRUD_LOWER$$STUDLY_NAME$Datatable object
+app.$CRUD_LOWER$$STUDLY_NAME$Datatable.init = function() {
+    app.$CRUD_LOWER$$STUDLY_NAME$Datatable.tb =  {};
+    if(typeof $.fn.JsDataTable !== 'undefined') {
+        app.$CRUD_LOWER$$STUDLY_NAME$Datatable.tb = $("#$CRUD_LOWER_END_DASH$$LOWER_NAME$-datatable").JsDataTable(this.config.datatable);
+    }$DATATABLE_SOFT_DELETES_INIT_SCRIPTS$
+};
+
+// initialize app.$CRUD_LOWER$$STUDLY_NAME$Datatable object until the document is loaded
+$(document).ready(app.$CRUD_LOWER$$STUDLY_NAME$Datatable.init());

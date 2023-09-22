@@ -1,0 +1,19 @@
+{
+    "name": "codeanddeploy\/uno",
+    "description": "",
+    "type": "laravel-theme",
+    "version": "1.0",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Code And Deploy",
+            "email": ""
+        }
+    ],
+    "extra": {
+        "theme": {
+            "parent": "",
+            "active": true
+        }
+    }
+}

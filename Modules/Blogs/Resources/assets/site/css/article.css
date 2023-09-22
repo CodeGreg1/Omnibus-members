@@ -1,0 +1,42 @@
+.hero-mini {
+    background-image: linear-gradient(to right, #697ded, #5e30c1);
+    padding-top: 40px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-mini-up {
+    padding: 0;
+    margin-top: -170px;
+    margin-bottom: 80px;
+}
+
+.hero-mini h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.bullet, .slash {
+    display: inline;
+    margin: 0 4px;
+}
+
+.bullet:after {
+    content: '\2022';
+}
+
+.text-job {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #34395e;
+}

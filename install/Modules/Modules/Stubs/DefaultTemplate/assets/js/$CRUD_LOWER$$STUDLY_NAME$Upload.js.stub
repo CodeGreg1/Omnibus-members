@@ -1,0 +1,15 @@
+"use strict";
+
+// define app.$CRUD_LOWER$$STUDLY_NAME$Upload object
+app.$CRUD_LOWER$$STUDLY_NAME$Upload = {};$UPLOAD_METHODS$
+
+// initialize functions of app.$CRUD_LOWER$$STUDLY_NAME$Upload object
+app.$CRUD_LOWER$$STUDLY_NAME$Upload.init = function() {
+    if(typeof Dropzone !== 'undefined') {
+        Dropzone.autoDiscover = false;
+        $UPLOAD_CALL_METHODS$
+    }
+};
+
+// initialize app.$CRUD_LOWER$$STUDLY_NAME$Upload object until the document is loaded
+$(document).ready(app.$CRUD_LOWER$$STUDLY_NAME$Upload.init());

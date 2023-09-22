@@ -1,0 +1,5 @@
+
+                            <tr>
+                                <th scope="row">@lang('$FORM_FIELD_VISUAL$')</th>
+                                <td>{{ $$LOWER_NAME$->$FORM_FIELD_NAME$ }}</td>
+                            </tr>

@@ -1,0 +1,31 @@
+
+
+    /**
+     * Show the form for creating a new resource.
+     * @return Renderable
+     */
+    public function create()
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.create');
+
+        $FOREIGN_CREATE_CONTROLLER_PLUCK$return view('$LOWER_NAME$::$CRUD_LOWER_END_DOT$create', [
+            'pageTitle' => __('Create new $SINGULAR_LOWER_NAME_SPACED$')$FOREIGN_CREATE_CONTROLLER_PLUCK_VARIABLE$
+        ]);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     * @param $CRUD_STUDLY$Store$MODEL$Request $request
+     * @return JsonResponse
+     */
+    public function store($CRUD_STUDLY$Store$MODEL$Request $request)
+    {
+        $model = $this->$CAMEL_NAME$->create($request->only($STORE_COLUMNS$));$FOREIGN_UPDATE_OR_STORE_CONTROLLER_BELONGS_TO_MANY_SYNC$$UPLOAD_CONTROLLER_METHOD_MEDIA$
+
+        event(new $STUDLY_NAME$Created($model));
+
+        return $this->handleAjaxRedirectResponse(
+            __('$SINGULAR_START_UPPER_NAME_SPACED$ created successfully.'), 
+            $this->redirectTo
+        );
+    }

@@ -1,0 +1,55 @@
+// Font Family
+$font: 'Poppins', sans-serif;
+
+
+// Colors ---------------
+$white: #fff;
+$black: #222;
+$gray: #ebebeb;//please note that it should be lighten gray; better not to change
+$theme-bg: linear-gradient(#3763eb 0%, #6f58e8 100%);
+
+
+// Theme Color
+$theme-color: #0084ff; //#3655ff;
+$success-color: #10b981;
+$danger-color: #f65660;
+$warning-color: #ffc107;
+
+// Text Color
+$button-text-color: #ffffff;
+
+$border-color: #ebebeb;
+
+//Body Color
+$body-color: #000;
+
+
+// Heading Color
+$heading-color: #051441;
+
+//Border Radius
+$border-radius: 0.575rem;
+
+//Section White BG
+$box-shadow-bg-white-section: 1px 3px 15px #e2e4e6;
+
+//Section Gray BG
+$bg-gray-section: #f3f6f9;
+$box-shadow-bg-gray-section: 1px 1px 5px #ededed;
+
+
+// Responsive Variables
+$desktop: 'only screen and (min-width: 1400px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 480px) and (max-width: 767px)';
+
+
+// Screen breakpoint variables
+$break-xsmall: 480px;
+$break-small: 768px;
+$break-medium: 992px;
+$break-large: 1200px;
+$break-xlarge: 1440px;

@@ -1,0 +1,2 @@
+
+        Route::delete('/delete', '$STUDLY_NAME$Controller@destroy')->name('$PLURAL_KEBAB_NAME$.delete');

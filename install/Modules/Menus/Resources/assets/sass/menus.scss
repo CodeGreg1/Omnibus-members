@@ -1,0 +1,121 @@
+.dd-full-width {
+    max-width: 100%;
+}
+
+.dd-list .dd-item .dd-handle {
+    border:none;
+    padding:8px 16px;
+    height:auto;
+    font-weight:600;
+    border-radius:3px;
+    background:#f3f7f9;
+    color:#6c757d
+}
+
+.dd-list .dd-item .dd-handle:hover {
+    color:#6658dd
+}
+
+.dd-list .dd-item button {
+    height:36px;
+    font-size:17px;
+    margin:0;
+    color:#98a6ad;
+    width:36px
+}
+
+.dd-list .dd3-item {
+    margin:5px 0
+}
+
+.dd-list .dd3-item .dd-item button {
+    width:36px;
+    height:36px
+}
+
+.dd-list .dd3-handle {
+    margin:0;
+    height:36px!important;
+    float:left
+}
+
+.dd-list .dd3-content {
+    height:auto;
+    border:none;
+    padding:8px 16px 8px 46px;
+    background:#f3f7f9;
+    color:#6c757d;
+    font-weight:600
+}
+
+.dd-list .dd3-content:hover {
+    color:#6658dd
+}
+
+.dd-list .dd3-handle:before {
+    content:"\f0c9";
+    font-family:"Font Awesome 6 Free";
+    color:#adb5bd
+}
+
+.dd-empty,.dd-placeholder { 
+    background:rgba(206,212,218,.2)
+}
+
+.dd-dragel .dd-handle { 
+    box-shadow:0 0 35px 0 rgba(154,161,171,.15)
+}
+
+.add-menu-item {
+    border: 2px dashed #ddd;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Remove Item */
+.remove-menu-item {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        color: #fc544b;
+    }
+}
+
+/* Edit Item Data */
+.edit-menu-item-data {
+    cursor: pointer;
+
+    &:hover {
+        color: #6658dd;
+    }
+}
+
+.edit-menu-item-modal {
+    cursor: pointer;
+}
+
+/* Menu Item Actions */
+.custom-dd-empty:hover .menu-item-actions {
+    color: #6c757d;
+}
+
+/* Datatable Menu Columns */
+.menu-edit-column {
+    width: 3%;
+}
+
+.sidebar-menu-top-70px {
+    margin-top: 70px !important;
+}
+
+.sidebar-menu-adjustment {
+    margin-top: 5px !important;
+}
+#menus-datatable .menu-type-column {
+    width: 120px;
+}

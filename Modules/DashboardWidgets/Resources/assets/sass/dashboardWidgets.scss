@@ -1,0 +1,69 @@
+#admin-dashboard-widgets-create-form {
+	.selectgroup-button {
+		height: unset;
+	    padding-top: 15px;
+	}
+
+	.selectgroup-button-icon i {
+	    font-size: 70px;
+	}
+
+	.field-group-heading {
+		font-size: 14px;
+	}
+
+	.field-to-show-table-wrapper {
+	    margin-bottom: 20px;
+	}
+}
+
+.fields-to-show-wrapper {
+	.select2-selection--multiple {
+		.select2-search--inline {
+			.select2-search__field {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+#dashboard-widgets {
+	overflow-x: hidden;
+
+	.dashboard-widgets-field-relationship-table {
+		.select2 {
+			.select2-selection__arrow {
+				right: -8px;
+			}
+		}
+	}
+
+	.row-field-to-show {
+		.select2-selection--multiple .select2-search--inline .select2-search__field {
+			width: 100% !important;
+		}
+	}
+	
+}
+
+#fields-table-to-show tbody tr > td {
+	height: 100px;
+}
+
+.dashboardwidgets-type-column {
+	width: 10%;
+}
+
+#admin-dashboardwidgets-datatable {
+	.dashboardwidgets-handle-column {
+		width: 1%;
+
+		.drag-handle {
+			cursor: grabbing;
+		}
+	}
+
+	.placeholder {
+		background-color: rgb(211, 242, 255);
+	}
+}

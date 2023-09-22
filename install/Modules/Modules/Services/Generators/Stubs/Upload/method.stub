@@ -1,0 +1,44 @@
+
+// handle on app.$CRUD_LOWER$$STUDLY_NAME$Upload object to initialize dropzone plugin for $FIELD_NAME$ field
+app.$CRUD_LOWER$$STUDLY_NAME$Upload.$FIELD_NAME_CAMEL$ = function() 
+{
+	
+	var e = $('#$CRUD_LOWER_END_DASH$$KEBAB_NAME$-$FIELD_NAME$-dropzone'), t = $(".dz-preview");
+    e.length && (Dropzone.autoDiscover = !1, e.each(function () {
+        var e, a, n, o, i;
+        e = $(this), a = void 0 !== e.data("dropzone-multiple"), n = e.find(t), o = void 0, i = {
+        	url:'/',
+        	paramName: '$FIELD_NAME$',
+            thumbnailWidth: null,
+            thumbnailHeight: null,
+            previewsContainer: n.get(0),
+            previewTemplate: n.html(),
+            maxFiles: $FIELD_UPLOAD_MAX_FILES$,
+            parallelUploads: $FIELD_UPLOAD_MAX_FILES$,
+            autoProcessQueue: false,
+            uploadMultiple: $FIELD_UPLOAD_MULTIPLE$,$FIELD_UPLOAD_PHOTO_EXT$
+            init: function () {
+                var myDropzone = this;
+
+                var uploadFiles = app.baseDropzone.countUploaded('.$KEBAB_NAME$-$FIELD_NAME$-dropzone-uploaded');
+
+                this.options.maxFiles = this.options.maxFiles - uploadFiles;
+
+                this.on("addedfile", function (e) {
+                	
+                    !a && o && this.removeFile(o), o = e;
+
+                    e.previewElement.querySelector("img").src = app.baseDropzone.config.defaultThumbnail;
+                	
+                	app.baseDropzone.removeErrors(e);
+                });
+
+                this.on("error", function (e, m) {
+                	app.notify(m);
+                    this.removeFile(e);
+                });
+
+            }
+        }, n.html(""), e.dropzone(i)
+    }));
+};

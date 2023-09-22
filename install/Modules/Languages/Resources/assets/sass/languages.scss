@@ -1,0 +1,46 @@
+.btn-edit-language-phrase,
+.btn-translate-language-phrase {
+	padding: 0.2px 6px !important;
+    font-size: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+
+	i.fas {
+		font-size: 9px;
+	}
+
+	&.btn {
+		&:hover:not(.btn-social):not(.btn-social-icon):active, &:hover:not(.btn-social):not(.btn-social-icon):focus, &:hover:not(.btn-social):not(.btn-social-icon):hover {
+			border: 1px solid gray !important;
+		}
+	}
+}
+
+.languages-phrase-txtbox,
+.btn-save-language-phrase,
+.btn-cancel-language-phrase {
+	display: none;
+}
+
+.btn-translate-language-phrase,
+.btn-save-language-phrase,
+.btn-cancel-language-phrase {
+	margin-top: 5px;
+}
+
+.languages-key-column,
+.languages-value-column {
+	width: 50%;
+}
+
+.languages-active-column {
+	width: 1%;
+}
+
+.languages-direction-display-column {
+	width: 10%;
+}
+
+.languages-code-column {
+	width: 5%;
+}

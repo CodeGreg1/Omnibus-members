@@ -1,0 +1,13 @@
+{
+    "name": "AvailableCurrencies",
+    "alias": "availablecurrencies",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AvailableCurrencies\\Providers\\AvailableCurrenciesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

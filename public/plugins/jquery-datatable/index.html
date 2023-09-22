@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Datatable</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Nunito";
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/jquery-datatable.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery-datatable.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="datatable"></div>
+    </div>
+
+    <script>
+        function activate(selected, api) {
+            console.log('Activating')
+        }
+
+        function deActivate(selected, api) {
+            console.log('de-activating')
+        }
+
+        function deleteUsers(selected, api) {
+            console.log('Deleting')
+        }
+
+        var options = {
+            src: 'http://ecomfind.test/admin/users/dummy/datatable',
+            resourceName: { singular: "user", plural: "users" },
+            columns: [
+                {
+                    title: 'Name',
+                    key: 'name',
+                    classes: ''
+                },
+                {
+                    title: 'Email',
+                    key: 'email',
+                    classes: 'hidden md:table-cell'
+                },
+                {
+                    title: 'Contact',
+                    key: 'contact_number',
+                    classes: 'hidden md:table-cell'
+                },
+                {
+                    title: 'Status',
+                    key: 'status',
+                    classes: 'hidden md:table-cell'
+                }
+            ],
+            filterTabs: [
+                { label: 'All', filters: [] },
+                { label: 'Active', filters: [{ key: 'status', value: 'active' }] },
+                { label: 'Deavtivated', filters: [{ key: 'status', value: 'inactive' }] }
+            ],
+            filterControl: [
+                {
+                    key: 'status',
+                    title: 'Status',
+                    choices: [
+                        { label: 'Active', value: 'active' },
+                        { label: 'Inactive', value: 'inactive' }
+                    ],
+                    shortcut: true,
+                    allowMultiple: true,
+                    showClear: true,
+                    value: 'active'
+                },
+                {
+                    key: 'filter',
+                    title: 'Filter',
+                    choices: [
+                        { label: 'Filter 1', value: '1' },
+                        { label: 'Filter 2', value: '2' },
+                    ],
+                    shortcut: true,
+                    allowMultiple: false,
+                    showClear: true,
+                },
+                {
+                    key: 'filter_two',
+                    title: 'Filter Two',
+                    choices: [
+                        { label: 'Filter 1', value: '1' },
+                        { label: 'Filter 2', value: '2' }
+                    ],
+                    shortcut: true,
+                    allowMultiple: false,
+                    showClear: true,
+                }
+            ],
+            sortControl: {
+                value: 'id_desc',
+                options: [
+                    { value: 'id_desc', label: 'Latest' },
+                    { value: 'id_asc', label: 'Oldest' },
+                    { value: 'name_asc', label: 'Name ( A - Z )' },
+                    { value: 'name_desc', label: 'Name ( Z - A )' }
+                ]
+            },
+            bulkActions: [
+                {
+                    title: "Activate users",
+                    onAction: activate
+                },
+                {
+                    title: "De-activate users",
+                    onAction: deActivate
+                },
+                {
+                    title: "Delete selected users",
+                    onAction: deleteUsers,
+                    status: 'error'
+                },
+            ],
+            moreActions: [
+                {
+                    title: 'New filter',
+                    onAction: function (datatable) { console.log(datatable) }
+                },
+                {
+                    title: 'Delete all filters',
+                    onAction: function (datatable) { console.log(datatable) }
+                }
+            ],
+            limit: 25,
+            //selectable: false,
+        };
+        var datatable = $("#datatable").JsDataTable(options);
+    </script>
+</body>
+
+</html>

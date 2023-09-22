@@ -1,0 +1,94 @@
+#admin-package-features-datatable {
+	.package-feature-handle-column {
+		width: 1%;
+
+		.drag-handle {
+			cursor: grabbing;
+		}
+	}
+
+	.placeholder {
+		background-color: rgb(211, 242, 255);
+	}
+}
+
+.bg-label-primary {
+	background-color: #e7e7ff !important;
+    color: #696cff !important;
+}
+.pricing-duration {
+	font-size: 14px;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.free-billing-badge {
+	font-size: 11px;
+	background: #e3e3e3;
+	color: #707070;
+	padding: 3px 6px;
+	border-radius: 3px;
+}
+.w-50px {
+	width: 50px;
+}
+.pricing-interval-duration {
+	margin-top: 8px;
+	font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background-color: #f3f6f8;
+    color: #77787e;
+    border-radius: 0 0 3px 3px;
+    display: inline-block;
+    padding: 5px 15px;
+}
+#pricing-table-packages {
+	.pricing-table-item-drag-handle {
+		width: 50px;
+		.drag-handle {
+			cursor: grabbing;
+			background-color: #f9f9f9;
+			border-radius: 3px;
+			padding: 24px 16px;
+			&:hover {
+				background-color: #f2f2f2;
+			}
+		}
+	}
+	.pricing-table-item-details {
+		width: 100%;
+	}
+	.pricing-table-item-remove-handle {
+		width: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.placeholder {
+		background-color: rgb(211, 242, 255);
+	}
+	.btn-remove-pricing-table-item {
+		background-color: #f8e7e7;
+		border-radius: 3px;
+		padding: 20px 16px;
+		color: #f84646;
+		text-decoration: none;
+		i {
+			margin-left: 0;
+		}
+		&:hover {
+			background-color: #fcdfdf;
+			text-decoration: none;
+		}
+	}
+	.ui-sortable-helper {
+		.btn-remove-pricing-table-item {
+			display: none;
+		}
+	}
+}
+.bootbox.modal .modal-body {
+	padding-bottom: 15px;
+}

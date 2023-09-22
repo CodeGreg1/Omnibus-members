@@ -1,0 +1,15 @@
+
+                            <tr>
+                                <th scope="row">@lang('$FORM_FIELD_VISUAL$')</th>
+                                <td class='p-10'>
+                                	@foreach($$LOWER_NAME$->$FORM_FIELD_NAME$ as $entry)
+                                        <a href="{{ $entry->url }}" target="_blank">
+                                            @if(in_array($entry->mime_type, MediaImageType::lists()))
+                                                <img src="{!! count($entry->generated_conversions) ? $entry->thumbnail : $entry->url !!}" class="img-thumbnail thumbnail-size">
+                                            @else
+                                                <img src="{!! $entry->thumbnail !!}" class="img-thumbnail thumbnail-size">
+                                            @endif
+                                        </a>
+                                    @endforeach
+                                </td>
+                            </tr>

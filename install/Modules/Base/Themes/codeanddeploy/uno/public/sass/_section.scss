@@ -1,0 +1,120 @@
+section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	@media (min-width: 992px) {
+        padding-top: 120px;
+		padding-bottom: 120px;
+    }
+
+    .section-heading {
+	    margin-bottom: 5px;
+	    font-size: 40px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	}
+
+    .heading-left {
+    	font-weight: 700;
+	    margin-bottom: 15px;
+	    position: relative;
+	    text-transform: uppercase;
+
+	    &:after {
+	    	background: var(--frontend-primary-color);
+	    	content: "";
+		    height: 2px;
+		    margin-left: 10px;
+		    position: absolute;
+		    top: 12px;
+		    width: 25px;
+	    }
+    }
+
+	.heading-center {
+		max-width: 650px;
+	    text-align: center;
+	    margin-bottom: 50px;
+
+		.sub-heading {
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    margin-bottom: 15px;
+		    position: relative;
+
+		    &:before {
+		    	top: 12px;
+    			margin-left: -35px;
+		    }
+
+		    &:after {
+		    	top: 12px;
+		    	margin-left: 10px;
+		    }
+
+		    &:after,
+		    &:before {
+		    	position: absolute;
+			    content: "";
+			    width: 25px;
+			    height: 2px;
+			    background: var(--frontend-primary-color);
+		    }
+		}
+
+		.section-description {
+		    text-align: center;
+		}
+
+		hr {
+		    width: 80px;
+		    margin-top: 40px;
+		    border-color: var(--frontend-primary-color);
+		}
+	}
+
+	&.bg-image {
+		&.bg-overlay {
+			.heading-center,
+			.container {
+				position:relative;
+				z-index: 1;
+			}
+
+			.sub-heading {
+				color: $white;
+
+				&:after,
+			    &:before {
+				    background: var(--frontend-primary-color);
+			    }
+			}
+
+
+
+			.section-heading {
+				color: $white;
+			}
+
+			.section-description {
+				color: #e5e5e5;
+			}
+
+			&:not(.blog-section) {
+				p, i, h1, h2, h3, h4, h5, h6, span, strong {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	&.bg-gray {
+		background-color: $bg-gray-section;
+	}
+}
+
+//fix for section for those who installed loom in their browser
+section#shadow-host-companion {
+	padding-top: 0;
+	padding-bottom: 0;
+}

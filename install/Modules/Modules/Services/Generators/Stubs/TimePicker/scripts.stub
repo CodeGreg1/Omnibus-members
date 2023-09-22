@@ -1,0 +1,2 @@
+
+    <script src="{{ url('plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js') }}"></script>

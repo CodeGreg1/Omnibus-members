@@ -1,0 +1,13 @@
+{
+    "name": "DatabaseBackup",
+    "alias": "databasebackup",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DatabaseBackup\\Providers\\DatabaseBackupServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

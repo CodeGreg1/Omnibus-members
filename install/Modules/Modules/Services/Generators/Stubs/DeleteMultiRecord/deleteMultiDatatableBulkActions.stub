@@ -1,0 +1,5 @@
+{
+                title: app.trans('Delete selected'),
+                onAction: app.$CRUD_LOWER$$STUDLY_NAME$Datatable.delete,
+                status: 'error'
+            },

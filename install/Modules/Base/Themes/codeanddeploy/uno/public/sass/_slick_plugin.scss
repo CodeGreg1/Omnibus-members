@@ -1,0 +1,30 @@
+.slick-next, 
+.slick-prev {
+	position: absolute;
+    right: 0;
+    top: -35px;
+    left: inherit;
+    width: 30px;
+    height: 30px;
+    background-color: var(--frontend-primary-color);
+    color: #fff;
+
+    &:hover, 
+	&:focus {
+		background-color: rgba(var(--frontend-primary-rgb), 0.9);
+		color: #fff;
+	}
+}
+
+.slick-prev
+{
+    right: 31px;
+    z-index: 9;
+}
+
+
+//fix spacing for section slider
+section .slick-slider {
+	margin-top: 45px;
+    margin-bottom: 0 !important;
+}

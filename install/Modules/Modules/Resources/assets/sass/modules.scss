@@ -1,0 +1,101 @@
+.checkbox-label {
+	top: -2px;
+    position: relative;
+    margin-right: 10px;
+}
+
+#field-extra-options-separator {
+    margin-top: 0px;
+}
+
+[name="additional_fields"] {
+	height: 150px !important;
+}
+
+.belongs-to-options-wrapper {
+	display: none;
+}
+
+td.error {
+	padding-top: 10px !important;
+}
+
+td.error .form-control {
+	border: 1px solid red;
+}
+
+td.error .message {
+	color: red;
+}
+
+.field-status {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.module-language-active-column {
+	width: 1%;
+}
+
+.languages-key-column,
+.languages-value-column {
+	width: 50%;
+}
+
+.module-phrase-txtbox,
+.btn-save-module-lang-phrase,
+.btn-cancel-module-lang-phrase {
+	display: none;
+}
+
+.btn-translate-module-lang-phrase,
+.btn-save-module-lang-phrase,
+.btn-cancel-module-lang-phrase {
+	margin-top: 5px;
+}
+
+.btn-edit-module-lang-phrase,
+.btn-translate-module-lang-phrase {
+	margin-top: 4px;
+	font-size: 11px !important;
+    padding: 7px 7px !important;
+    line-height: 0;
+
+    i {
+    	font-size: 11px !important;
+    }
+}
+
+.E0991-Table-Container {
+	.table-form-language-editing {
+		margin-top: -20px;
+
+		.form-alert-message {
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+#module-fields-datatable {
+	.field-handle-column {
+		width: 1%;
+
+		.drag-handle {
+			cursor: grabbing;
+		}
+	}
+
+	.placeholder {
+		background-color: rgb(211, 242, 255);
+	}
+
+	.table tbody#fields+tbody,
+	.table tbody#fields {
+		border-top: none;
+	}
+
+	.field-handle-head {
+		width: 1%;
+	}
+}

@@ -1,0 +1,142 @@
+.dropzone {
+    .dz-preview .list-group-item {
+        margin-top: 12px;
+        border-top: 1px solid #E0E6ED !important;
+        border-bottom: 1px solid #E0E6ED !important;
+        border-left: 1px solid #E0E6ED !important;
+        border-right: 1px solid #E0E6ED !important;
+        padding-top: 10px;
+        padding-bottom: 10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        border-radius: 0.25rem;
+
+        .col {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.dropzone-uploaded {
+    .list-group-item {
+        margin-top: 12px;
+        border-top: 1px solid #E0E6ED !important;
+        border-bottom: 1px solid #E0E6ED !important;
+        border-left: 1px solid #E0E6ED !important;
+        border-right: 1px solid #E0E6ED !important;
+        padding-top: 10px;
+        padding-bottom: 10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        border-radius: 0.25rem;
+
+        .col {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .download-col {
+        padding-right: 5px;
+    }
+
+    .action-item {
+        color: black;
+    }
+
+    .delete-item {
+        color: black;
+        padding-right: 19px;
+    }
+}
+
+
+.dropzone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dz-message {
+    padding: 4rem 1rem;
+    background-color: #FFF;
+    border: 1px solid #E0E6ED;
+    border-radius: 0.25rem;
+    text-align: center;
+    color: #8492A6;
+    transition: all 0.2s ease;
+    order: -1;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.dz-message:hover {
+    background-color: #FFF;
+    border-color: rgba(5, 28, 75, 0.5);
+    color: #8492A6;
+}
+
+.dz-drag-hover .dz-message {
+    background-color: #FFF;
+    border-color: rgba(5, 28, 75, 0.5);
+    color: #8492A6;
+    box-shadow: 0 0 20px rgba(5, 28, 75, 0.1);
+}
+
+.dropzone-single.dz-max-files-reached .dz-message {
+    background-color: rgba(31, 45, 61, 0.9);
+    color: white;
+    opacity: 0;
+}
+
+.dropzone-single.dz-max-files-reached .dz-message:hover {
+    opacity: 1;
+}
+
+.dz-preview-single {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.25rem;
+}
+
+.dz-preview-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.25rem;
+}
+
+.dz-preview-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+.dz-preview-multiple .list-group-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+[data-dz-size] strong {
+    font-weight: 400;
+}
+
+.dz-image-preview .avatar, .dz-preview .avatar, .dropzone-uploaded.list-group .avatar {
+    background: transparent !important;
+}
+
+.dz-button {
+    border: none;
+    background: transparent;
+    color: gray;
+}

@@ -1,0 +1,215 @@
+/*===========================
+    03. Hero CSS
+===========================*/
+.hero-section {
+    position: relative;
+    height: 870px;
+    display: flex;
+    align-items: center;
+
+    @media #{$desktop} {
+        height: 870px;
+    }
+
+    @media #{$laptop} {
+        height: 700px;
+    }
+
+    @media #{$lg} {
+        height: 650px;
+    }
+
+    @media #{$md, $xs} {
+        height: auto;
+        padding-top: 150px;
+    }
+
+    &.bg-overlay {
+        position: relative !important;
+        background-size: cover !important;
+        overflow: hidden !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+
+        &.default-overlay {
+            &::before {
+                background: rgb(0, 0, 0);
+            }
+        }
+
+        &.primary-overlay {
+            &::before {
+                background: var(--frontend-primary-color);
+            }
+        }
+
+        &.success-overlay {
+            &::before {
+                background: $success-color;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        .hero-content-wrapper {
+            z-index: 89;
+            position: relative;
+        }
+    }
+
+    .hero-section-buttons {
+        .btn:not(:first-child) {
+            margin-left: 12px;
+        }
+    }
+
+    .hero-content-wrapper {
+
+        h2 {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 20px;
+            color: var(--frontend-primary-color);
+
+            &:after {
+              display: block;
+                content: '......';
+                color: $white;
+                font-weight: 200;
+            }
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 60px;
+            color: $heading-color;
+
+            @media #{$lg, $laptop} {
+                font-size: 45px;
+                line-height: 60px;
+            }
+
+            @media #{$xs} {
+                font-size: 40px;
+                line-height: 52px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            color: $body-color;
+            opacity: 0.8;
+        }
+
+    }
+
+    &.bg-white,
+    &.bg-gray {
+        .hero-content-wrapper {
+            h2 {
+                &:after {
+                    color: var(--frontend-primary-color);
+                }
+            }
+        }
+    }
+
+    .hero-img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+        width: 48%;
+        text-align: right;
+        margin: 60px 0;
+
+
+        @media #{$md, $xs} {
+            position: relative;
+            width: 100%;
+            top: 0;
+            @include transform(translate(0, 0))
+        }
+
+        &.hero-img-2 {
+            top: 50%;
+        }
+
+        .hero-img-right {
+            position: relative;
+
+            @media #{$md} {
+                position: static;
+            }
+            @media #{$xs} {
+                position: static;
+            }
+        }
+
+        img.dot-shape {
+            position: absolute;
+            left: -60px;
+            bottom: 60px;
+            z-index: -1;
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .video-btn {
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            @include transform(translateY(-50%));
+
+            @media #{$md, $xs} {
+                left: 50%;
+                @include transform(translate(-50%, -50%));
+            }
+
+            a {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: var(--frontend-primary-color);
+                @include transition(all .3s ease-out 0s);
+                @include box-shadow(0px 0px 20px rgba(#AABDF9, .45));
+
+                &:hover {
+                    @include box-shadow(0px 0px 50px rgba(#AABDF9, .65));
+                }
+            }
+        }
+    }
+
+    &.hero-section-2 {
+
+        @media #{$md, $xs} {
+            display: block;
+        }
+
+        .border-btn {
+
+            &:hover {
+                background: rgba(var(--frontend-primary-rgb), .7);
+                color: $white;
+            }
+        }
+    }
+}

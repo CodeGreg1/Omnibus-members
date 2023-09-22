@@ -1,0 +1,38 @@
+
+
+// handle app.$CRUD_LOWER$$STUDLY_NAME$Datatable object on deleting $SINGULAR_LOWER_NAME$ with ajax request
+app.$CRUD_LOWER$$STUDLY_NAME$Datatable.delete = function(selected) {
+
+    const ids = selected.map(item => item.id);
+
+    bootbox.confirm({
+        title: app.trans('Are you sure?'),
+        message: app.trans("You're about to delete $SINGULAR_LOWER_NAME_SPACED$(s)!"),
+        buttons: {
+            confirm: {
+                label: app.trans('Yes'),
+                className: 'btn-danger'
+            },
+            cancel: {
+                label: app.trans('No'),
+                className: 'btn-default'
+            }
+        },
+        callback: function (result) {
+            if ( result ) {
+                $.ajax({
+                    type: 'delete',
+                    url: app.$CRUD_LOWER$$STUDLY_NAME$Datatable.config.delete.route,
+                    data: {ids:ids},
+                    success: function (response, textStatus, xhr) {
+                        app.notify(response.message);
+                        app.$CRUD_LOWER$$STUDLY_NAME$Datatable.tb.refresh();
+                    },
+                    error: function (response) {
+                        app.notify(response.responseJSON.message);
+                    }
+                });
+            }
+        }
+    });
+};

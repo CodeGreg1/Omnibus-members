@@ -1,0 +1,12 @@
+{
+    "Database Backup": "Database Backup",
+    "Database backup successfully created.": "Database backup successfully created.",
+    "Selected files successfully removed.": "Selected files successfully removed.",
+    "Database backup settings successfully updated.": "Database backup settings successfully updated.",
+    "database backup": "database backup",
+    "database backups": "database backups",
+    "Automatically backup database using Cron Job": "Automatically backup database using Cron Job",
+    "Backup now": "Backup now",
+    "Date": "Date",
+    "No database backups were found!": "No database backups were found!"
+}

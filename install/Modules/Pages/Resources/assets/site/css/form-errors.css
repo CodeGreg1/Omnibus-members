@@ -1,0 +1,18 @@
+.form-group.error label,
+.form-group.error .message,
+.form-group.error .list-group-item.error [data-dz-name] {
+    color: red;
+}
+.form-group.error .message {
+    font-size: 13px;
+}
+.form-group.error .message:nth-child(n+1) {
+    margin-bottom: 0;
+}
+.form-group.error .form-control,
+.form-group.error .select2-selection {
+    border: 1px solid red;
+}
+.form-group.error .form-help {
+    display: none;
+}

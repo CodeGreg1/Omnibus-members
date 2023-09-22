@@ -1,0 +1,30 @@
+.cta-section {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	
+	&.bg-image {
+		.btn {
+			&.btn-hover-arrow {
+				color: #fff !important;
+			}
+		}
+	}
+
+	.row {
+    	&.align-items-center {
+    		.col-lg-4 {
+    			text-align: right;
+    		}
+    	}
+    }
+
+	@media only screen and (max-width: 990px) {
+        .row {
+        	&.align-items-center {
+        		.col-lg-4 {
+        			text-align: left;
+        		}
+        	}
+        }
+    }
+}

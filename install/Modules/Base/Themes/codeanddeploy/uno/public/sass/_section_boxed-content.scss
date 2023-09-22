@@ -1,0 +1,100 @@
+/* boxed content */
+.boxed-content-section {
+	padding-bottom: 55px;
+
+    @media (min-width: 992px) {
+        padding-bottom: 95px;
+    }
+        
+	.boxed-content {
+		text-align: center;
+	    padding: 25px;
+	    border-radius: 10px;
+	    margin-bottom: 25px;
+	    @include bg-white-box-shadow;
+
+		> i {
+			font-size: 4em;
+			color: var(--frontend-primary-color);
+		    margin-bottom: 0.4em;
+		}
+
+		.boxed-content-title {
+			font-size: 22px;
+			font-weight: 700;
+		}
+
+		&.left-aligned {
+			text-align: left;
+
+			.boxed-content-title {
+				margin-bottom: 10px;
+				line-height: 28px;
+				font-weight: normal;
+			}
+
+			i {
+				float: left;
+				margin-right: 10px;
+				font-size: 2em;
+			}
+		}
+
+		&.left-boxed-icon {
+			i {
+				@include border-radius(2px);
+
+				padding: 10px;
+				width: 60px;
+				height: 60px;
+				background: var(--frontend-primary-color);
+				color: #fff;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 0.25rem;
+			}
+
+			.boxed-content-title,
+			p {
+				padding-left: 80px;
+			}
+		}
+	}
+
+	&.bg-image {
+		&.bg-overlay {
+			.boxed-content {
+				background: rgb(255 255 255 / 20%);
+			    padding: 25px;
+			    border: 2px solid rgb(255 255 255 / 30%);
+			    box-shadow: none;
+			    border-radius: 10px;
+			    margin-bottom: 25px;
+
+				> i {
+					color: var(--frontend-primary-color);
+				}
+
+				&.left-boxed-icon {
+					> i {
+						color: $white;
+					}
+				}
+
+				p {
+					color: $gray;
+				}
+			}
+		}
+	}
+
+	&.bg-gray {
+		.boxed-content {
+			background: #fff;
+		    padding: 25px;
+		    border-radius: 10px;
+		    margin-bottom: 25px;
+		    @include bg-gray-box-shadow;
+		}
+	}
+}

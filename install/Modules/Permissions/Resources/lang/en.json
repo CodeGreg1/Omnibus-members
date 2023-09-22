@@ -1,0 +1,14 @@
+{
+    "Permissions": "Permissions",
+    "Create new permission": "Create new permission",
+    "Permission created successfully.": "Permission created successfully.",
+    "Edit permission": "Edit permission",
+    "Permission updated successfully.": "Permission updated successfully.",
+    "Selected permission(s) deleted successfully.": "Selected permission(s) deleted successfully.",
+    "Your about to delete user permission(s)!": "Your about to delete user permission(s)!",
+    "Name": "Name",
+    "Display Name": "Display Name",
+    "Guard Name": "Guard Name",
+    "Delete selected permissions": "Delete selected permissions",
+    "No permissions were found!": "No permissions were found!"
+}

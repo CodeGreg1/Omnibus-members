@@ -1,0 +1,46 @@
+
+
+    /**
+     * Show the specified $SINGULAR_LOWER_NAME_SPACED$.
+     * 
+     * @authenticated
+     * @urlParam id integer The ID of the $SINGULAR_LOWER_NAME_SPACED$.
+     * 
+     * @response status=200 scenario="Success" {
+     *    "success": true,
+     *    "message": "$MODEL$ fetched successfully.",
+     *    "data": $API_SHOW_COMMENT$
+     * }
+     * @response status=404 scenario="Not Found" {
+     *    "success": false,
+     *    "message": "Resource Not Found"
+     * }
+     * @response status=401 scenario="Unauthenticated" {
+     *       "message": "Unauthenticated."
+     * }
+     * @response status=403 scenario="Unauthorized" {
+     *       "message": "This action is unauthorized."
+     * }
+     * 
+     * 
+     * @param id integer The ID of the $SINGULAR_LOWER_NAME_SPACED$. 
+     * @return JsonResource
+     */
+    public function show($id)
+    {
+        authorize([
+            'user.$PLURAL_KEBAB_NAME$.show', 
+            'admin.$PLURAL_KEBAB_NAME$.show'
+        ]);
+
+        $model = $this->$CAMEL_NAME$->find($id);
+
+        if (is_null($model)) {
+            return $this->errorNotFound();
+        }$API_CONTROLLER_METHOD_LOAD_RELATION$
+
+        return $this->successResponse(
+            __('$SINGULAR_START_UPPER_NAME_SPACED$ fetched successfully.'), 
+            new $STUDLY_NAME$Resource($model)
+        );
+    }

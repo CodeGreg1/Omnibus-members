@@ -1,0 +1,5 @@
+                            
+                            if(app.can('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.edit')) {
+                                html += '<a class="dropdown-item" href="/$CRUD_LOWER_END_SLASH$$PLURAL_KEBAB_NAME$/'+row.id+'/edit"><i class="fas fa-edit"></i> '+app.trans('Edit')+'</a>';
+                            }
+                            

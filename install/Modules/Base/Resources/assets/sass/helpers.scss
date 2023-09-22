@@ -1,0 +1,129 @@
+.display-none {
+	display: none;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-bolder {
+	font-weight: bolder;
+}
+
+.width-100per {
+	width: 100%;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.thumbnail-size {
+	width: 60px;
+    height: 60px;
+}
+
+.p-10 {
+	padding: 10px !important;
+}
+
+.avatar-transparent {
+    background: transparent;
+}
+
+@for $i from 1 through 20 {
+    .w-#{$i * 5}-per {
+        width: $i * 5%;
+    }
+}
+
+.btn-white {
+	background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 2px 6px #cfcfcf;
+    color: #7b7b7b !important;
+
+    &:hover,
+    &:active {
+    	background-color: #fff !important;
+    	border-color: #000 !important;
+	    box-shadow: 0 2px 6px #cfcfcf !important;
+	    color: #7b7b7b !important;
+    }
+}
+
+.btn-gateway-checkout-uppercase-style {
+  font-size: 15px !important;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.badge-default {
+	background-color: #ddd;
+}
+
+
+// Margin-top
+@for $i from 1 through 100 {
+  .mt-#{1 * $i}{margin-top: 1px * $i;}
+}
+
+// Margin-bottom
+@for $i from 1 through 100 {
+  .mb-#{1 * $i}{margin-bottom: 1px * $i;}
+}
+
+// Margin-left
+@for $i from 1 through 100 {
+  .ml-#{1 * $i}{margin-left: 1px * $i;}
+}
+
+// Margin-right
+@for $i from 1 through 100 {
+  .mr-#{1 * $i}{margin-right: 1px * $i;}
+}
+
+// Padding-top
+.pt-0 {
+  padding-top: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pt-#{1 * $i}{padding-top: 1px * $i;}
+}
+
+// Padding-bottom
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pb-#{1 * $i}{padding-bottom: 1px * $i;}
+}
+
+// Padding-left
+.pl-0 {
+  padding-left: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pl-#{1 * $i}{padding-left: 1px * $i;}
+}
+
+// Padding-right
+.pr-0 {
+  padding-right: 0 !important;
+}
+@for $i from 1 through 100 {
+  .pr-#{1 * $i}{padding-right: 1px * $i;}
+}
+
+// Z-index
+@for $i from 1 through 1000 {
+  .z-index-#{1 * $i}{z-index: 1 * $i;}
+}
+// Border Radius
+@for $i from 1 through 100 {
+  .br-#{1 * $i}{border-radius: 1px * $i;}
+}

@@ -1,0 +1,58 @@
+"use strict";
+
+// define app.$CRUD_LOWER$$STUDLY_NAME$Create object
+app.$CRUD_LOWER$$STUDLY_NAME$Create = {};
+
+// handle app.$CRUD_LOWER$$STUDLY_NAME$Create object configuration
+app.$CRUD_LOWER$$STUDLY_NAME$Create.config = {
+    form: '#$CRUD_LOWER_END_DASH$$KEBAB_NAME$-create-form',
+    route: '/$CRUD_LOWER_END_SLASH$$PLURAL_KEBAB_NAME$/create'
+};
+
+// handle app.$CRUD_LOWER$$STUDLY_NAME$Create object ajax request
+app.$CRUD_LOWER$$STUDLY_NAME$Create.ajax = function() {
+
+    $(app.$CRUD_LOWER$$STUDLY_NAME$Create.config.form).on('submit', function(e) {
+
+        e.preventDefault();
+
+        var $self = this;
+        var $button = $(app.$CRUD_LOWER$$STUDLY_NAME$Create.config.form).find(':submit');
+        var $content = $button.html();
+
+        var data = new FormData(this);$TINYMCE_FORM_DATA_SCRIPT$$UPLOAD_FORM_DATA_SCRIPT$
+
+        $.ajax({
+            type: 'POST',
+            url: app.$CRUD_LOWER$$STUDLY_NAME$Create.config.route,
+            data: data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            beforeSend: function () {
+                app.buttonLoader($button);
+            },
+            success: function (response, textStatus, xhr) {
+                app.redirect(response.data.redirectTo);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                var response = XMLHttpRequest;
+                // Check check if form validation errors
+                app.formErrors(app.$CRUD_LOWER$$STUDLY_NAME$Create.config.form, response.responseJSON, response.status);
+                // Reset button
+                app.backButtonContent($button, $content);
+            }
+        }); 
+
+
+    });
+    
+};
+
+// initialize functions of app.$CRUD_LOWER$$STUDLY_NAME$Create object
+app.$CRUD_LOWER$$STUDLY_NAME$Create.init = function() {
+    app.$CRUD_LOWER$$STUDLY_NAME$Create.ajax();
+};
+
+// initialize app.$CRUD_LOWER$$STUDLY_NAME$Create object until the document is loaded
+$(document).ready(app.$CRUD_LOWER$$STUDLY_NAME$Create.init());

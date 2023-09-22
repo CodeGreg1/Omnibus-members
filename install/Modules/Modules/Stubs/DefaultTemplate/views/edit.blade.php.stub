@@ -1,0 +1,56 @@
+@extends('$LOWER_NAME$::layouts.master')
+
+@section('module-styles')
+    <link rel="stylesheet" href="{{ url('plugins/jquery-datatable/css/jquery-datatable.css') }}">$SELECT2_PLUGIN_STYLES$$DATE_PICKER_PLUGIN_STYLES$$TIME_PICKER_PLUGIN_STYLES$$BELONGS_TO_MANY_STYLES$
+@endsection
+
+@section('module-scripts')
+    <script src="{{ url('plugins/jquery-datatable/js/jquery-datatable.js') }}"></script>$TINYMCE_PLUGIN_SCRIPT$$SELECT2_PLUGIN_SCRIPTS$$DATE_PICKER_PLUGIN_SCRIPTS$$TIME_PICKER_PLUGIN_SCRIPTS$$BELONGS_TO_MANY_SCRIPTS$$UPLOAD_DROPZONE_SCRIPT$
+@endsection
+
+@section('breadcrumbs')
+    <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item">
+            <a href="{{ route('dashboard.index') }}"> @lang('Dashboard')</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{{ route('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.index') }}"> @lang('$PLURAL_START_UPPER_NAME_SPACED$')</a>
+        </li>
+        <li class="breadcrumb-item active">
+            <a href="javascript:void(0)"> {{ $pageTitle }}</a>
+        </li>
+    </ol>
+@endsection
+
+@section('content')
+    
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-xm-12">
+            <div class="card card-form">
+                <div class="card-header">
+                    <h4>{{ $pageTitle }}</h4>
+                </div>
+                
+                <form id="$CRUD_LOWER_END_DASH$$KEBAB_NAME$-edit-form" method="post" data-action="{{ route('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.update', $$LOWER_NAME$->id) }}">
+                    @method('patch')
+                    <div class="card-body">
+                        <div class="row">
+                            
+                            $EDIT_FORM_FIELDS$
+                            
+                        </div>
+                    </div>
+                    <div class="card-footer bg-whitesmoke">
+                        <button class="btn btn-primary btn-lg float-right" type="submit">@lang('Save changes')</button>
+                        <a href="{{ route('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.index') }}" class="btn btn-default btn-lg float-right mr-3">@lang('Cancel')</a>
+                    </div>   
+                </form>    
+
+
+
+            </div>
+        </div>
+    </div>
+    
+
+@endsection

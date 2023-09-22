@@ -1,0 +1,10 @@
+
+                            <div class="col-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="$FORM_FIELD_NAME$">@lang('$FORM_FIELD_VISUAL$') <span class="text-muted">(@lang('$FORM_VALIDATION_VISUAL$'))</span></label>
+                                    <input type="number"$FORM_FIELD_DEFAULT_VALUE$
+                                        name="$FORM_FIELD_NAME$"
+                                        class="form-control"
+                                        step="1"$FORM_FIELD_VALIDATION$>$FORM_FIELD_HELP$
+                                </div>
+                            </div>

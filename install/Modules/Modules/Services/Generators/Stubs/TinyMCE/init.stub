@@ -1,0 +1,3 @@
+if(typeof tinymce !== 'undefined' && $('.$CRUD_LOWER_END_DASH$$KEBAB_NAME$-tinymce-default').length) {
+        app.$CRUD_LOWER$$STUDLY_NAME$.tinyMCE();
+    }

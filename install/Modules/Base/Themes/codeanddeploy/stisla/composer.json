@@ -1,0 +1,19 @@
+{
+    "name": "codeanddeploy\/stisla",
+    "description": "Stisla admin template for laravel.",
+    "type": "laravel-theme",
+    "version": "1.0",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Ronard Cauba",
+            "email": "ardnor101@gmail.com"
+        }
+    ],
+    "extra": {
+        "theme": {
+            "parent": "",
+            "active": true
+        }
+    }
+}

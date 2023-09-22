@@ -1,0 +1,38 @@
+
+
+    /**
+     * Show the form for editing the specified resource.
+     * @param int $id
+     * @return Renderable
+     */
+    public function edit($id)
+    {
+        $this->authorize('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.edit');
+
+        $FOREIGN_EDIT_CONTROLLER_PLUCK$return view('$LOWER_NAME$::$CRUD_LOWER_END_DOT$edit', [
+            'pageTitle' => __('Edit $SINGULAR_LOWER_NAME_SPACED$'),
+            '$LOWER_NAME$' => $this->$CAMEL_NAME$->findOrFail($id)$FOREIGN_EDIT_CONTROLLER_PLUCK_VARIABLE$
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     * @param $CRUD_STUDLY$Update$MODEL$Request $request
+     * @param int $id
+     * @return JsonResponse
+     */
+    public function update($CRUD_STUDLY$Update$MODEL$Request $request, $id)
+    {
+        $model = $this->$CAMEL_NAME$->findOrFail($id);$FOREIGN_UPDATE_OR_STORE_CONTROLLER_BELONGS_TO_MANY_SYNC$
+
+        $this->$CAMEL_NAME$
+            ->update($model, 
+                $request->only($UPDATE_COLUMNS$));$UPLOAD_CONTROLLER_METHOD_MEDIA$
+
+        event(new $STUDLY_NAME$Updated($model));
+
+        return $this->handleAjaxRedirectResponse(
+            __('$SINGULAR_START_UPPER_NAME_SPACED$ updated successfully.'), 
+            $this->redirectTo
+        );
+    }

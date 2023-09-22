@@ -1,0 +1,36 @@
+@extends('$LOWER_NAME$::layouts.master')
+
+@section('module-styles')
+    <link rel="stylesheet" href="{{ url('plugins/jquery-datatable/css/jquery-datatable.css') }}">
+@endsection
+
+@section('module-scripts')
+    <script src="{{ url('plugins/jquery-datatable/js/jquery-datatable.js') }}"></script>
+    <script src="{{ url('plugins/bootbox/js/bootbox.all.min.js') }}"></script>
+@endsection
+
+@section('policies')
+    app.policies = {!! json_encode($policies) !!};
+@endsection
+
+@section('module-actions')
+    @can('$CRUD_LOWER_END_DOT$$PLURAL_KEBAB_NAME$.create')
+        $CREATE_INDEX_BUTTON$
+    @endcan
+@endsection
+
+@section('breadcrumbs')
+    <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item">
+            <a href="{{ route('dashboard.index') }}"> @lang('Dashboard')</a>
+        </li>
+        <li class="breadcrumb-item active">
+            <a href="javascript:void(0)"> @lang('$PLURAL_START_UPPER_NAME_SPACED$')</a>
+        </li>
+    </ol>
+@endsection
+
+@section('content')
+    @include('partials.messages')
+    <div id="$CRUD_LOWER_END_DASH$$LOWER_NAME$-datatable"></div>
+@endsection

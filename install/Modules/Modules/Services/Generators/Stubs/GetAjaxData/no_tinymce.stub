@@ -1,0 +1,5 @@
+
+// handle getting app.$CAMEL_NAME$$AJAX_OPERATION_TYPE$ object form data
+app.$CAMEL_NAME$$AJAX_OPERATION_TYPE$.data = function() {
+    return $(this.config.form).serializeArray();
+};

@@ -1,0 +1,13 @@
+{
+    "name": "DashboardWidgets",
+    "alias": "dashboardwidgets",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DashboardWidgets\\Providers\\DashboardWidgetsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
